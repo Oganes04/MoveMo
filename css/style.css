@@ -114,17 +114,17 @@ legend {
 
 :root {
   --container-width: 1168px;
-  --font-h1: clamp(29.04px, 2.29vw, 44px);
-  --font-h2: clamp(23.1px, 1.82vw, 35px);
-  --font-h3: clamp(15.84px, 1.25vw, 24px);
-  --font-h4: clamp(13.2px, 1.04vw, 20px);
-  --font-h5: clamp(10.56px, 0.83vw, 16px);
-  --font-24: clamp(15.84px, 1.25vw, 24px);
-  --font-18: clamp(11.88px, 0.94vw, 18px);
-  --font-14: clamp(9.24px, 0.73vw, 14px);
-  --font-12: clamp(7.92px, 0.62vw, 12px);
-  --font-btn: clamp(13.2px, 1.04vw, 20px);
-  --font-popup: clamp(6.6px, 0.52vw, 10px);
+  --font-h1: clamp(7.04px, 2.29vw, 44px);
+  --font-h2: clamp(5.6px, 1.82vw, 35px);
+  --font-h3: clamp(3.84px, 1.25vw, 24px);
+  --font-h4: clamp(3.2px, 1.04vw, 20px);
+  --font-h5: clamp(2.56px, 0.83vw, 16px);
+  --font-24: clamp(3.84px, 1.25vw, 24px);
+  --font-18: clamp(2.88px, 0.94vw, 18px);
+  --font-14: clamp(2.24px, 0.73vw, 14px);
+  --font-12: clamp(1.92px, 0.62vw, 12px);
+  --font-btn: clamp(3.2px, 1.04vw, 20px);
+  --font-popup: clamp(1.6px, 0.52vw, 10px);
 }
 
 @font-face {
@@ -145,7 +145,7 @@ body {
 }
 
 main {
-  padding: clamp(47.52px, 3.75vw, 72px) clamp(0px, 0vw, 0px) clamp(47.52px, 3.75vw, 72px) clamp(0px, 0vw, 0px);
+  padding: clamp(11.52px, 3.75vw, 72px) clamp(0px, 0vw, 0px) clamp(11.52px, 3.75vw, 72px) clamp(0px, 0vw, 0px);
 }
 
 img {
@@ -161,13 +161,13 @@ img {
 h1 {
   font-size: var(--font-h1);
   font-weight: 700;
-  margin-bottom: clamp(18.48px, 1.4583333333vw, 28px);
+  margin-bottom: clamp(4.48px, 1.4583333333vw, 28px);
 }
 
 h2 {
   font-size: var(--font-h2);
   font-weight: 700;
-  margin-bottom: clamp(18.48px, 1.4583333333vw, 28px);
+  margin-bottom: clamp(4.48px, 1.4583333333vw, 28px);
 }
 
 body::-webkit-scrollbar {
@@ -189,9 +189,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .warning-hint {
-  padding: clamp(13.2px, 1.0416666667vw, 20px) clamp(7.92px, 0.625vw, 12px) clamp(13.2px, 1.0416666667vw, 20px) clamp(7.92px, 0.625vw, 12px);
+  padding: clamp(3.2px, 1.0416666667vw, 20px) clamp(1.92px, 0.625vw, 12px) clamp(3.2px, 1.0416666667vw, 20px) clamp(1.92px, 0.625vw, 12px);
   background-color: #EBECEC;
-  border-radius: clamp(6.6px, 0.5208333333vw, 10px);
+  border-radius: clamp(1.6px, 0.5208333333vw, 10px);
   border: 1px solid #DD2A1B;
   width: 100%;
   display: -webkit-box;
@@ -200,7 +200,7 @@ body::-webkit-scrollbar-thumb {
   display: -webkit-flex;
   display: flex;
   align-items: flex-start;
-  gap: clamp(7.92px, 0.625vw, 12px);
+  gap: clamp(1.92px, 0.625vw, 12px);
 }
 
 .warning-hint p {
@@ -208,14 +208,19 @@ body::-webkit-scrollbar-thumb {
   color: #3D4B55;
 }
 
+.warning-hint img {
+  width: clamp(3.84px, 1.25vw, 24px);
+  height: clamp(3.84px, 1.25vw, 24px);
+}
+
 .bulk-client {
-  margin-bottom: clamp(41.58px, 3.28125vw, 63px);
+  margin-bottom: clamp(10.08px, 3.28125vw, 63px);
 }
 
 .bulk-client__inner > p {
   font-size: var(--font-24);
   color: #414141;
-  margin-bottom: clamp(31.68px, 2.5vw, 48px);
+  margin-bottom: clamp(7.68px, 2.5vw, 48px);
 }
 
 .bulk-client__steps {
@@ -225,18 +230,18 @@ body::-webkit-scrollbar-thumb {
   display: -webkit-flex;
   display: flex;
   align-items: stretch;
-  gap: clamp(10.56px, 0.8333333333vw, 16px);
-  padding: clamp(0px, 0vw, 0px) clamp(15.84px, 1.25vw, 24px) clamp(0px, 0vw, 0px) clamp(15.84px, 1.25vw, 24px);
+  gap: clamp(2.56px, 0.8333333333vw, 16px);
+  padding: clamp(0px, 0vw, 0px) clamp(3.84px, 1.25vw, 24px) clamp(0px, 0vw, 0px) clamp(3.84px, 1.25vw, 24px);
   position: relative;
-  margin-bottom: clamp(26.4px, 2.0833333333vw, 40px);
+  margin-bottom: clamp(6.4px, 2.0833333333vw, 40px);
 }
 
 .bulk-client__steps::before {
   content: "";
   position: absolute;
   width: 100%;
-  height: clamp(58.08px, 4.5833333333vw, 88px);
-  border-radius: clamp(6600px, 520.8333333333vw, 10000px);
+  height: clamp(14.08px, 4.5833333333vw, 88px);
+  border-radius: clamp(1600px, 520.8333333333vw, 10000px);
   background-color: #1D996C;
   top: 50%;
   transform: translate(0, -50%);
@@ -251,8 +256,8 @@ body::-webkit-scrollbar-thumb {
 .bulk-client__steps li {
   flex: 1;
   height: auto;
-  padding: clamp(18.48px, 1.4583333333vw, 28px) clamp(5.28px, 0.4166666667vw, 8px) clamp(15.84px, 1.25vw, 24px) clamp(5.28px, 0.4166666667vw, 8px);
-  border-radius: clamp(6.6px, 0.5208333333vw, 10px);
+  padding: clamp(4.48px, 1.4583333333vw, 28px) clamp(1.28px, 0.4166666667vw, 8px) clamp(3.84px, 1.25vw, 24px) clamp(1.28px, 0.4166666667vw, 8px);
+  border-radius: clamp(1.6px, 0.5208333333vw, 10px);
   border: 1px solid #1D996C;
   display: -webkit-box;
   display: -moz-box;
@@ -261,7 +266,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: clamp(18.48px, 1.4583333333vw, 28px);
+  gap: clamp(4.48px, 1.4583333333vw, 28px);
   position: relative;
   background-color: #fff;
 }
@@ -276,13 +281,13 @@ body::-webkit-scrollbar-thumb {
   -webkit-transform: translate(0, -50%);
   -o-transform: translate(0, -50%);
   transform: translate(0, -50%);
-  right: clamp(-11.22px, -0.8854166667vw, -17px);
-  width: clamp(5.28px, 0.4166666667vw, 8px);
+  right: clamp(-2.72px, -0.8854166667vw, -17px);
+  width: clamp(1.28px, 0.4166666667vw, 8px);
 }
 
 .bulk-client__steps li img {
-  width: clamp(34.32px, 2.7083333333vw, 52px);
-  height: clamp(34.32px, 2.7083333333vw, 52px);
+  width: clamp(8.32px, 2.7083333333vw, 52px);
+  height: clamp(8.32px, 2.7083333333vw, 52px);
 }
 
 .bulk-client__steps li p {
@@ -292,18 +297,18 @@ body::-webkit-scrollbar-thumb {
 
 .bulk-client__steps li > svg {
   position: absolute;
-  right: clamp(5.28px, 0.4166666667vw, 8px);
-  bottom: clamp(5.28px, 0.4166666667vw, 8px) !important;
-  width: clamp(7.92px, 0.625vw, 12px);
-  height: clamp(7.92px, 0.625vw, 12px);
+  right: clamp(1.28px, 0.4166666667vw, 8px);
+  bottom: clamp(1.28px, 0.4166666667vw, 8px) !important;
+  width: clamp(1.92px, 0.625vw, 12px);
+  height: clamp(1.92px, 0.625vw, 12px);
   cursor: pointer;
 }
 
 .bulk-client__step-tooltip {
   position: absolute;
-  bottom: clamp(-23.76px, -1.875vw, -36px) !important;
-  padding: clamp(5.28px, 0.4166666667vw, 8px) clamp(5.28px, 0.4166666667vw, 8px) clamp(5.28px, 0.4166666667vw, 8px) clamp(5.28px, 0.4166666667vw, 8px);
-  border-radius: clamp(3.3px, 0.2604166667vw, 5px);
+  bottom: clamp(-5.76px, -1.875vw, -36px) !important;
+  padding: clamp(1.28px, 0.4166666667vw, 8px) clamp(1.28px, 0.4166666667vw, 8px) clamp(1.28px, 0.4166666667vw, 8px) clamp(1.28px, 0.4166666667vw, 8px);
+  border-radius: clamp(0.8px, 0.2604166667vw, 5px);
   border: 0.5px solid #1D996C;
   background-color: #fff;
   z-index: 10;
@@ -325,10 +330,10 @@ body::-webkit-scrollbar-thumb {
 
 .bulk-client__step-tooltip svg {
   position: absolute;
-  right: clamp(2.64px, 0.2083333333vw, 4px);
-  top: clamp(2.64px, 0.2083333333vw, 4px);
-  width: clamp(7.92px, 0.625vw, 12px);
-  height: clamp(7.92px, 0.625vw, 12px);
+  right: clamp(0.64px, 0.2083333333vw, 4px);
+  top: clamp(0.64px, 0.2083333333vw, 4px);
+  width: clamp(1.92px, 0.625vw, 12px);
+  height: clamp(1.92px, 0.625vw, 12px);
   cursor: pointer;
 }
 
@@ -343,7 +348,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .bulk-documents {
-  margin-bottom: clamp(47.52px, 3.75vw, 72px);
+  margin-bottom: clamp(11.52px, 3.75vw, 72px);
 }
 
 .bulk-documents__cards {
@@ -353,28 +358,28 @@ body::-webkit-scrollbar-thumb {
   display: -webkit-flex;
   display: flex;
   align-items: stretch;
-  gap: clamp(21.12px, 1.6666666667vw, 32px);
+  gap: clamp(5.12px, 1.6666666667vw, 32px);
 }
 
 .bulk-documents__card {
   flex: 1;
   height: auto;
-  padding: clamp(10.56px, 0.8333333333vw, 16px) clamp(15.84px, 1.25vw, 24px) clamp(15.84px, 1.25vw, 24px) clamp(15.84px, 1.25vw, 24px);
-  border-radius: clamp(6.6px, 0.5208333333vw, 10px);
+  padding: clamp(2.56px, 0.8333333333vw, 16px) clamp(3.84px, 1.25vw, 24px) clamp(3.84px, 1.25vw, 24px) clamp(3.84px, 1.25vw, 24px);
+  border-radius: clamp(1.6px, 0.5208333333vw, 10px);
   border: 1px solid #1D996C;
 }
 
 .bulk-documents__card img {
-  width: clamp(47.52px, 3.75vw, 72px);
-  height: clamp(47.52px, 3.75vw, 72px);
-  margin-bottom: clamp(5.28px, 0.4166666667vw, 8px);
+  width: clamp(11.52px, 3.75vw, 72px);
+  height: clamp(11.52px, 3.75vw, 72px);
+  margin-bottom: clamp(1.28px, 0.4166666667vw, 8px);
 }
 
 .bulk-documents__card h3 {
   font-size: var(--font-h4);
   font-weight: 500;
-  line-height: clamp(18.48px, 1.4583333333vw, 28px);
-  margin-bottom: clamp(7.92px, 0.625vw, 12px);
+  line-height: clamp(4.48px, 1.4583333333vw, 28px);
+  margin-bottom: clamp(1.92px, 0.625vw, 12px);
 }
 
 .bulk-documents__card ul {
@@ -388,11 +393,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .bulk-documents__card ul li:not(:last-child) {
-  margin-bottom: clamp(3.3px, 0.2604166667vw, 5px);
+  margin-bottom: clamp(0.8px, 0.2604166667vw, 5px);
 }
 
 .bulk-advantages {
-  margin-bottom: clamp(52.8px, 4.1666666667vw, 80px);
+  margin-bottom: clamp(12.8px, 4.1666666667vw, 80px);
 }
 
 .bulk-advantages ul {
@@ -400,24 +405,24 @@ body::-webkit-scrollbar-thumb {
   display: -moz-grid;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: clamp(18.48px, 1.4583333333vw, 28px);
-  margin-bottom: clamp(26.4px, 2.0833333333vw, 40px);
+  gap: clamp(4.48px, 1.4583333333vw, 28px);
+  margin-bottom: clamp(6.4px, 2.0833333333vw, 40px);
 }
 
 .bulk-advantages ul li {
   box-shadow: 3px 4px 7px 0 rgba(1, 82, 51, 0.05);
   background: #f0f6f3;
-  border-radius: clamp(6.6px, 0.5208333333vw, 10px);
-  padding: clamp(13.2px, 1.0416666667vw, 20px) clamp(21.12px, 1.6666666667vw, 32px) clamp(13.2px, 1.0416666667vw, 20px) clamp(21.12px, 1.6666666667vw, 32px);
+  border-radius: clamp(1.6px, 0.5208333333vw, 10px);
+  padding: clamp(3.2px, 1.0416666667vw, 20px) clamp(5.12px, 1.6666666667vw, 32px) clamp(3.2px, 1.0416666667vw, 20px) clamp(5.12px, 1.6666666667vw, 32px);
   position: relative;
-  min-height: clamp(110.88px, 8.75vw, 168px);
+  min-height: clamp(26.88px, 8.75vw, 168px);
 }
 
 .bulk-advantages ul li h3 {
   font-size: var(--font-h4);
   font-weight: 700;
   line-height: 140%;
-  margin-bottom: clamp(5.28px, 0.4166666667vw, 8px);
+  margin-bottom: clamp(1.28px, 0.4166666667vw, 8px);
 }
 
 .bulk-advantages ul li p {
@@ -442,51 +447,51 @@ body::-webkit-scrollbar-thumb {
 }
 
 .bulk-advantages button {
-  height: clamp(47.52px, 3.75vw, 72px);
+  height: clamp(11.52px, 3.75vw, 72px);
   width: 100%;
   text-align: center;
   font-size: var(--font-btn);
   font-weight: 600;
   background-color: #1D996C;
   color: #FFF;
-  border-radius: clamp(6.6px, 0.5208333333vw, 10px);
+  border-radius: clamp(1.6px, 0.5208333333vw, 10px);
 }
 
 .icon-180 {
-  width: clamp(118.8px, 9.375vw, 180px);
+  width: clamp(28.8px, 9.375vw, 180px);
 }
 
 .icon-216 {
-  width: clamp(142.56px, 11.25vw, 216px);
+  width: clamp(34.56px, 11.25vw, 216px);
 }
 
 .icon-172 {
-  width: clamp(113.52px, 8.9583333333vw, 172px);
+  width: clamp(27.52px, 8.9583333333vw, 172px);
 }
 
 .icon-232 {
-  width: clamp(153.12px, 12.0833333333vw, 232px);
+  width: clamp(37.12px, 12.0833333333vw, 232px);
 }
 
 .icon-168 {
-  width: clamp(110.88px, 8.75vw, 168px);
+  width: clamp(26.88px, 8.75vw, 168px);
 }
 
 .icon-68 {
-  width: clamp(44.88px, 3.5416666667vw, 68px);
-  height: clamp(44.88px, 3.5416666667vw, 68px);
-  right: clamp(13.2px, 1.0416666667vw, 20px);
-  bottom: clamp(13.2px, 1.0416666667vw, 20px) !important;
+  width: clamp(10.88px, 3.5416666667vw, 68px);
+  height: clamp(10.88px, 3.5416666667vw, 68px);
+  right: clamp(3.2px, 1.0416666667vw, 20px);
+  bottom: clamp(3.2px, 1.0416666667vw, 20px) !important;
 }
 
 .bulk-contacts h2 {
-  margin-bottom: clamp(5.28px, 0.4166666667vw, 8px);
+  margin-bottom: clamp(1.28px, 0.4166666667vw, 8px);
 }
 
 .bulk-contacts p {
   font-size: var(--font-24);
   font-weight: 400;
-  margin-bottom: clamp(7.92px, 0.625vw, 12px);
+  margin-bottom: clamp(1.92px, 0.625vw, 12px);
 }
 
 .bulk-contacts a {
