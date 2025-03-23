@@ -127,11 +127,6 @@ legend {
   --font-popup: 20px;
 }
 
-@font-face {
-  font-family: Montserrat;
-  src: url("../fonts/Montserrat-VariableFont_wght.ttf");
-}
-
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -429,6 +424,7 @@ body::-webkit-scrollbar-thumb {
 .bulk-advantages ul li p {
   font-size: var(--font-h5);
   font-weight: 400;
+  color: #3d4b55;
 }
 
 .bulk-advantages ul li img {
@@ -444,6 +440,10 @@ body::-webkit-scrollbar-thumb {
 
 .bulk-advantages ul li.green-dark {
   background-color: #1D996C;
+  color: #FFFFFF;
+}
+
+.bulk-advantages ul li.green-dark p {
   color: #FFFFFF;
 }
 
