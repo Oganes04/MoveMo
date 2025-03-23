@@ -144,15 +144,6 @@ body {
   color: #3D4B55;
 }
 
-
-html, body {
-  overflow-x: hidden !important;
-
-  width: 100% !important; 
-  min-width:1920px;
-	margin:0 auto !important;
-}
-
 main {
   padding: 72px 0 72px 0;
 }
