@@ -144,6 +144,12 @@ body {
   color: #3D4B55;
 }
 
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 main {
   padding: 72px 0 72px 0;
 }
