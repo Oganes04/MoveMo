@@ -203,6 +203,10 @@ body::-webkit-scrollbar-thumb {
   color: #3D4B55;
 }
 
+.warning-hint p strong {
+  font-weight: 700;
+}
+
 .warning-hint img {
   width: 24px;
   height: 24px;
