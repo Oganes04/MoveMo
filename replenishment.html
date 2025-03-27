@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=1280">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header">
+    
+        <div class="header__top">
+            <div class="container">      
+                <div class="header__top-inner">
+                <a href="index.html" class="header__logo">
+                        <img src="../../images/logo.svg" alt="">
+                </a>
+    
+    
+                    <div class="header__search">
+                        <div class="header__search-input">
+                            <input type="text" placeholder="Введите код запчасти или VIN">
+                            <img src="../../images/icons/icon-search.svg" alt="">  
+                        </div>
+                        <div class="header__search-additions">
+                            <label>
+                                <input type="checkbox" name="">
+                                <span>Без реплик</span>
+                            </label>
+    
+                            <label>
+                                <input type="checkbox" name="" id="">
+                                <span>Без замен</span>
+                            </label>
+    
+                            <label>
+                                <input type="checkbox" name="" id="">
+                                <span>Без Emex</span>
+                            </label>
+                        </div>
+                    </div>
+    
+                    <div class="header__location">
+                        <img src="../../images/icons/icon-location.svg" alt="">
+                        <span>Санкт-Петербург</span>
+                    </div>
+    
+                    <div class="header__phone">
+                        <a href="tel:88120000000">8 (812) 000 00 00</a>
+                        <div class="row">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="8" cy="8" r="8" fill="#1D996C"/>
+                                <g clip-path="url(#clip0_24_239)">
+                                <path d="M11.8707 6.63694L11.3546 6.12739C11.1933 5.96815 10.9675 5.96815 10.8062 6.12739L7.96752 8.92994L5.16107 6.09554C5.03204 5.96815 4.77397 5.96815 4.64494 6.09554L4.09655 6.63694C3.93526 6.79618 3.93526 7.01911 4.09655 7.17834L7.96752 11L11.8385 7.17834C12.032 7.01911 12.032 6.76433 11.8707 6.63694Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_24_239">
+                                <rect width="8" height="5" fill="white" transform="translate(4 6)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <span>Заказать звонок</span>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+    
+    
+        <div class="header__bottom">
+           <div class="container">
+                <div class="header__bottom-inner">
+                    <button>
+                        <div class="burger_menu" id="burger_menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+        
+                        <span>КАТАЛОГИ</span>
+                    </button>
+                    <nav>
+                        <ul>
+                            <li><a href="">ИНФОРМАЦИЯ</a></li>
+                            <li><a href="">ПОСТАВЩИКАМ</a></li>
+                            <li><a href="">КОНТАКТЫ</a></li>
+                        </ul>
+                    </nav>
+    
+    
+                    <div class="header__account">
+                        <div class="header__cart">
+                            <div class="col">
+                                <img src="../../images/icons/icon-cart.svg" alt="">
+                                <span>23 шт</span>
+                            </div>
+        
+                            <div class="col">
+                                <span>Итого:</span>
+                                <strong>26 331,00 ₽</strong>
+                            </div>
+                        </div>
+    
+                        <div class="header__account-login">
+                            <img src="../../images/icons/icon-account.svg" alt="">
+                            <span>Войти</span>
+                        </div>
+                    </div>
+    
+                </div>
+           </div>
+        </div>
+    
+    
+    
+    </header>
+
+    <main class="main">
+
+        <section class="replenishment">
+            <div class="container">
+
+                <h1>Пополнение баланса</h1>
+
+                <div class="replenishment__inner">
+
+                    <div class="replenishment__selections">
+                        <h2>Выбрать способ оплаты:</h2>
+
+                        <label for="bill" class="replenishment__selection">
+                            <div class="col">
+                                <h3>Выставить счет на безнальную оплату для ИП и ООО</h3>
+                                <img src="../images/icons/icon-bill.svg" alt="">    
+                            </div>
+                            <input type="radio" name="replenishment" id="bill">
+                        </label>
+
+                        <label for="plastic" class="replenishment__selection">
+                            <div class="col">
+                                <h3>Картой на сайте (для ИП и физлиц)</h3>
+                                <img src="../images/icons/icon-plastic.svg" alt="">    
+                            
+                            </div>
+                            <input type="radio" name="replenishment" id="plastic">
+                        </label>
+
+
+                        <label for="cash" class="replenishment__selection">
+                            <div class="col">
+                                <h3>Наличными при получении (для ИП и физлиц)</h3>
+                                <img src="../images/icons/icon-cash.svg" alt="">    
+                            </div>
+                            <input type="radio" name="replenishment" id="cash">
+                        </label>
+
+                        <label for="sbp" class="replenishment__selection">
+                            <div class="col">
+                                <h3>СБП (для ИП и физлиц)</h3>
+                                <img src="../images/icons/icon-sbp.svg" alt="">    
+                            </div>
+                            <input type="radio" name="replenishment" id="sbp">
+                        </label>
+                    </div>
+
+                    <div class="replenishment__info">
+                        <h3>Базовая сумма к оплате:</h3>
+                        <span>2099.79</span>
+                        <button>Оплатить</button>
+                    </div>
+
+
+
+                    
+                </div>
+            </div>
+        </section>
+
+       
+
+    </main>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
