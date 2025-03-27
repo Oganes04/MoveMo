@@ -390,7 +390,7 @@ header:has(.burger_menu.open) .header__adaptive-content {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .header__bottom-inner button {
@@ -456,7 +456,7 @@ header:has(.burger_menu.open) .header__adaptive-content {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
 }
 
