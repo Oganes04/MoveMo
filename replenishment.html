@@ -19,29 +19,56 @@
         <div class="header__top">
             <div class="container">      
                 <div class="header__top-inner">
-                <a href="index.html" class="header__logo">
-                        <img src="../../images/logo.svg" alt="">
-                </a>
+                    <a href="index.html" class="header__logo">
+                            <img src="../../images/logo.svg" alt="">
+                    </a>
     
     
                     <div class="header__search">
                         <div class="header__search-input">
-                            <input type="text" placeholder="Введите код запчасти или VIN">
+                            <div class="header__search-input-wrapper">
+                                <input type="text" placeholder="Введите код запчасти или VIN">
+                                <img src="../../images/icons/icon-history.svg" alt="">
+                            </div>
                             <img src="../../images/icons/icon-search.svg" alt="">  
                         </div>
                         <div class="header__search-additions">
                             <label>
-                                <input type="checkbox" name="">
+                                <label class="check-label">
+                                    <span class="options__desc"></span>
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="fakecheck checked">
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.2123 1.943L5.8508 10.8124C5.65381 11.1378 5.3232 11.332 4.96558 11.332C4.64921 11.332 4.34955 11.1796 4.14421 10.9138L0.846477 6.65815C0.58317 6.31819 0.618048 5.81883 0.926551 5.52123C1.22621 5.2312 1.72974 5.22565 2.03628 5.50963L4.83834 8.10428L9.85298 1.00531C10.1025 0.652232 10.6198 0.5569 10.9735 0.801031C11.341 1.05475 11.4461 1.55663 11.2123 1.943Z" fill="white"/>
+                                        </svg>    
+                                    </span>
+                                </label>
                                 <span>Без реплик</span>
                             </label>
     
                             <label>
-                                <input type="checkbox" name="" id="">
+                                <label class="check-label">
+                                    <span class="options__desc"></span>
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="fakecheck">
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.2123 1.943L5.8508 10.8124C5.65381 11.1378 5.3232 11.332 4.96558 11.332C4.64921 11.332 4.34955 11.1796 4.14421 10.9138L0.846477 6.65815C0.58317 6.31819 0.618048 5.81883 0.926551 5.52123C1.22621 5.2312 1.72974 5.22565 2.03628 5.50963L4.83834 8.10428L9.85298 1.00531C10.1025 0.652232 10.6198 0.5569 10.9735 0.801031C11.341 1.05475 11.4461 1.55663 11.2123 1.943Z" fill="white"/>
+                                        </svg>    
+                                    </span>
+                                </label>
                                 <span>Без замен</span>
                             </label>
     
                             <label>
-                                <input type="checkbox" name="" id="">
+                                <label class="check-label">
+                                    <span class="options__desc"></span>
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="fakecheck">
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.2123 1.943L5.8508 10.8124C5.65381 11.1378 5.3232 11.332 4.96558 11.332C4.64921 11.332 4.34955 11.1796 4.14421 10.9138L0.846477 6.65815C0.58317 6.31819 0.618048 5.81883 0.926551 5.52123C1.22621 5.2312 1.72974 5.22565 2.03628 5.50963L4.83834 8.10428L9.85298 1.00531C10.1025 0.652232 10.6198 0.5569 10.9735 0.801031C11.341 1.05475 11.4461 1.55663 11.2123 1.943Z" fill="white"/>
+                                        </svg>    
+                                    </span>
+                                </label>
                                 <span>Без Emex</span>
                             </label>
                         </div>
