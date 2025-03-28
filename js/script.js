@@ -46,3 +46,47 @@ $('.popup-dept-btn').click(function() {
     openPopup($('.popup-dept'));
 });
 
+
+
+
+
+
+
+//====================== Реализация функционала КОРЗИНЫ ===================
+
+
+
+
+$('.cart__items-delete').click(function() {
+    $('.cart__item').remove();
+});
+
+$('.cart-item-delete').click(function() {
+    $(this).closest('.cart__item').remove();
+});
+
+
+$('.cart-item-quantity-add').click(function() {
+    let currntValueBlock = $(this).parent().find('span');
+    let currntValue = parseInt(currntValueBlock.text());
+    let maxValue = $(this).data('max');
+
+    if (currntValue < maxValue) {
+        currntValue++;
+    }
+
+    currntValueBlock.text(currntValue);
+});
+
+
+
+$('.cart-item-quantity-remove').click(function() {
+    let currntValueBlock = $(this).parent().find('span');
+    let currntValue = parseInt(currntValueBlock.text());
+
+    if (currntValue > 1) {
+        currntValue--;
+    }
+    
+    currntValueBlock.text(currntValue);
+});
