@@ -55,6 +55,36 @@ $('.popup-dept-btn').click(function() {
 //====================== Реализация функционала КОРЗИНЫ ===================
 
 
+// Обработчик клика по кнопке "Выбрать всё"
+$('.cart__items-check-all').click(function() {
+    const isChecked = $(this).find('input').prop('checked');
+    
+    // Применяем состояние ко всем фейковым чекбоксам
+    $('.cart__item .fakecheck').toggleClass('checked', isChecked);
+    
+    // Синхронизируем состояния реальных чекбоксов
+    $('.cart__item input[type="checkbox"]')
+        .prop('checked', isChecked)
+        .trigger('change');
+});
+
+// Обработчики для отдельных чекбоксов
+$('.cart__item input[type="checkbox"]').change(function() {
+    const allChecked = $('.cart__item input[type="checkbox"]:checked').length === 
+                      $('.cart__item input[type="checkbox"]').length;
+    
+    // Обновляем состояние кнопки "Выбрать всё"
+    $('.cart__items-check-all')
+        .prop('checked', allChecked)
+        .trigger('change');
+    
+    // Обновляем классы у fakecheck элементов
+    $(this).siblings('.fakecheck')
+        .toggleClass('checked', $(this).prop('checked'));
+});
+
+
+
 
 
 $('.cart__items-delete').click(function() {
