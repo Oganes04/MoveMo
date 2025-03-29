@@ -2547,3 +2547,192 @@ header:has(.burger_menu.open) .header__adaptive-content {
   border-radius: 5px;
   color: #FFF;
 }
+
+.guest-entrance__info h1 {
+  font-size: var(--font-h1);
+  margin-bottom: 28px;
+}
+
+.guest-entrance__info p {
+  font-size: var(--font-h4);
+}
+
+.guest-entrance__info ul {
+  padding-left: 1rem;
+  font-size: var(--font-h4);
+}
+
+.guest-entrance__info ul li {
+  list-style-type: disc;
+}
+
+.guest-entrance__inner {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-start;
+  gap: 68px;
+}
+
+.guest-entrance__inner form {
+  width: 600px;
+  flex: none;
+  background-color: #DEF0E9;
+  padding: 36px 32px 28px 32px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+.guest-entrance__inner form > a {
+  font-size: var(--font-12);
+  color: #5C6871;
+  margin-bottom: 8px;
+}
+
+.guest-entrance__inner form h2 {
+  font-size: var(--font-h4);
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.guest-entrance__inner form input {
+  width: 100%;
+  height: 48px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #FCFCFC;
+  margin-bottom: 8px;
+  font-size: 10px;
+}
+
+.guest-entrance__inner form textarea {
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #FCFCFC;
+  padding: 8px 16px;
+  font-size: 10px;
+  height: 100px;
+  resize: none;
+  margin-bottom: 36px;
+}
+
+.guest-entrance__inner form textarea:focus {
+  outline: none;
+  resize: none;
+}
+
+.guest-entrance__inner form button {
+  width: 100%;
+  border-radius: 5px;
+  height: 56px;
+  background-color: #1D996C;
+  color: #FFF;
+  font-size: var(--font-h4);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.guest-entrance__inner form > p {
+  font-size: 10px;
+  font-weight: 300;
+  color: #5C6871;
+  text-align: center;
+}
+
+.guest-entrance__inner form > p:first-child {
+  margin-bottom: 4px;
+}
+
+.proposal__inner {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 72px;
+}
+
+.proposal__inner > img {
+  width: 328px;
+  height: 316px;
+}
+
+.proposal__inner form {
+  width: 700px;
+  flex: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+.proposal__inner form h1 {
+  margin-bottom: 36px;
+}
+
+.proposal__inner form label {
+  margin-bottom: 8px;
+}
+
+.proposal__inner form label span {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 4px;
+  color: #B0B0B0;
+}
+
+.proposal__inner form label input {
+  width: 100%;
+  height: 48px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #3D4B55;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.proposal__inner form label textarea {
+  width: 100%;
+  height: 196px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #3D4B55;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.proposal__inner form label textarea:focus {
+  outline: none;
+  resize: none;
+}
+
+.proposal__inner form button {
+  width: 368px;
+  height: 56px;
+  border-radius: 5px;
+  background-color: #1D996C;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #FFF;
+  margin-top: 20px;
+}
