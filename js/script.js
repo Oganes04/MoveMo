@@ -120,3 +120,47 @@ $('.cart-item-quantity-remove').click(function() {
     
     currntValueBlock.text(currntValue);
 });
+
+
+
+
+//====================== Реализация функционала поля ввода для паролей ===================
+
+$(document).on('click', '.popup-mini form label:has(input[type="password"]) svg', function(e) {
+    $(this).parent().find('input').attr('type', 'text');
+});
+
+
+$(document).on('click', '.popup-mini form label:has(input[type="text"]) svg', function(e) {
+    $(this).parent().find('input').attr('type', 'password');
+});
+
+
+
+
+
+$(document).on('click', '.settings-profile__input button.add', function(e) {
+    const container = $(this).closest('.col');
+    const template = `
+        <div class="settings-profile__input">
+            <input type="email">
+            <button class="add">
+                <img src="../images/icons/icon-plus.svg" alt="">
+            </button>
+            <button class="delite">
+                <img src="../images/icons/icon-minus.svg" alt="">
+            </button>
+        </div>
+    `;
+    
+    $(template).appendTo(container);
+});
+
+
+
+$(document).on('click', '.settings-profile__input button.delite', function() {
+    const inputsCount = $('.settings-profile__input').length;
+    if (inputsCount > 1) {
+        $(this).parent().remove();
+    }
+});

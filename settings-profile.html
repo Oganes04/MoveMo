@@ -154,42 +154,116 @@
 
     <main class="main">
         
-       <section class="proposal">
-        <div class="container">
-            <div class="proposal__inner">
+        <section class="settings-profile">
+            <div class="container">
 
-                <form action="">
+                <h1>Настройки профиля</h1>
 
-                    <h1>Жалоба</h1>
+                <div class="settings-profile__inner">
 
-                    <label>
-                        <span>Тема</span>
-                        <input type="text" placeholder="Введите тему">
-                    </label>
+                    <div class="settings-profile__email">
+                        <div class="settings-profile__header">
+                            <div class="row">
+                                <h2>Email</h2>
+                                <span>Укажите адрес e-mail (или несколько)</span>
+                            </div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_121_1810)">
+                                <path d="M25.3333 1.33325H6.66667C4.89921 1.33537 3.20474 2.03843 1.95496 3.28821C0.705176 4.538 0.00211714 6.23246 0 7.99992L0 23.9999C0.00211714 25.7674 0.705176 27.4618 1.95496 28.7116C3.20474 29.9614 4.89921 30.6645 6.66667 30.6666H25.3333C27.1008 30.6645 28.7953 29.9614 30.045 28.7116C31.2948 27.4618 31.9979 25.7674 32 23.9999V7.99992C31.9979 6.23246 31.2948 4.538 30.045 3.28821C28.7953 2.03843 27.1008 1.33537 25.3333 1.33325ZM6.66667 3.99992H25.3333C26.1317 4.00149 26.9114 4.24194 27.5719 4.69032C28.2325 5.13871 28.7438 5.77451 29.04 6.51592L18.8293 16.7279C18.0779 17.4763 17.0606 17.8965 16 17.8965C14.9394 17.8965 13.9221 17.4763 13.1707 16.7279L2.96 6.51592C3.2562 5.77451 3.76748 5.13871 4.42806 4.69032C5.08864 4.24194 5.86829 4.00149 6.66667 3.99992ZM25.3333 27.9999H6.66667C5.6058 27.9999 4.58839 27.5785 3.83824 26.8283C3.08809 26.0782 2.66667 25.0608 2.66667 23.9999V9.99992L11.2853 18.6133C12.5368 19.8616 14.2323 20.5626 16 20.5626C17.7677 20.5626 19.4632 19.8616 20.7147 18.6133L29.3333 9.99992V23.9999C29.3333 25.0608 28.9119 26.0782 28.1618 26.8283C27.4116 27.5785 26.3942 27.9999 25.3333 27.9999Z" fill="#1D996C"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_121_1810">
+                                <rect width="32" height="32" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>    
+                        </div>
+                        <div class="cols">
+                            <span>Основной e-mail</span>
 
-                    <label>
-                        <span>Телефон</span>
-                        <input type="text" placeholder="+7(777)777-77-77">
-                    </label>
+                            <div class="col">
+                                <div class="settings-profile__input">
+                                    <input type="email">
+                                    <button class="add">
+                                        <img src="../images/icons/icon-plus.svg" alt="">
+                                    </button>
+                                    <button class="delite">
+                                        <img src="../images/icons/icon-minus.svg" alt="">
+                                    </button>
+                                </div>
 
-                    <label>
-                        <span>Имя</span>
-                        <input type="text" placeholder="Ваше имя">
-                    </label>
+                                <div class="settings-profile__input">
+                                    <input type="email">
+                                    <button class="add">
+                                        <img src="../images/icons/icon-plus.svg" alt="">
+                                    </button>
+                                    <button class="delite">
+                                        <img src="../images/icons/icon-minus.svg" alt="">
+                                    </button>
+                                </div>
 
-                    <label>
-                        <span>Ваше предложение</span>
-                        <textarea name="" id="" rows="6" placeholder="Ваше предложение"></textarea>
-                    </label>
+                                <div class="settings-profile__input">
+                                    <input type="email">
+                                    <button class="add">
+                                        <img src="../images/icons/icon-plus.svg" alt="">
+                                    </button>
+                                    <button class="delite">
+                                        <img src="../images/icons/icon-minus.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
 
-                    <button>Предложить</button>
-                </form>
+                        <button type="submit">Сохранить изменения</button>
+                    </div>
 
 
-                <img src="../images/icons/icon-complaint-mail.svg" alt="">
+
+
+                    <div class="settings-profile__password">
+                        <div class="settings-profile__header">
+                            <div class="row">
+                                <h2>Изменить пароль учётной записи</h2>
+                                <span>Необходим для входа в магазин</span>
+                            </div>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_121_1825)">
+                                <path d="M25.3346 11.232V9.33333C25.3346 6.85798 24.3513 4.48401 22.601 2.73367C20.8506 0.983331 18.4767 0 16.0013 0C13.5259 0 11.152 0.983331 9.40164 2.73367C7.6513 4.48401 6.66797 6.85798 6.66797 9.33333V11.232C5.48045 11.7503 4.46969 12.6034 3.7593 13.6869C3.04891 14.7705 2.66967 16.0376 2.66797 17.3333V25.3333C2.67009 27.1008 3.37314 28.7953 4.62293 30.045C5.87271 31.2948 7.56717 31.9979 9.33463 32H22.668C24.4354 31.9979 26.1299 31.2948 27.3797 30.045C28.6295 28.7953 29.3325 27.1008 29.3346 25.3333V17.3333C29.3329 16.0376 28.9537 14.7705 28.2433 13.6869C27.5329 12.6034 26.5222 11.7503 25.3346 11.232ZM9.33463 9.33333C9.33464 7.56522 10.037 5.86953 11.2873 4.61929C12.5375 3.36905 14.2332 2.66667 16.0013 2.66667C17.7694 2.66667 19.4651 3.36905 20.7153 4.61929C21.9656 5.86953 22.668 7.56522 22.668 9.33333V10.6667H9.33463V9.33333ZM26.668 25.3333C26.668 26.3942 26.2465 27.4116 25.4964 28.1618C24.7463 28.9119 23.7288 29.3333 22.668 29.3333H9.33463C8.27377 29.3333 7.25635 28.9119 6.50621 28.1618C5.75606 27.4116 5.33464 26.3942 5.33464 25.3333V17.3333C5.33464 16.2725 5.75606 15.2551 6.50621 14.5049C7.25635 13.7548 8.27377 13.3333 9.33463 13.3333H22.668C23.7288 13.3333 24.7463 13.7548 25.4964 14.5049C26.2465 15.2551 26.668 16.2725 26.668 17.3333V25.3333Z" fill="#1D996C"/>
+                                <path d="M16.0013 18.6667C15.6477 18.6667 15.3085 18.8072 15.0585 19.0573C14.8084 19.3073 14.668 19.6465 14.668 20.0001V22.6667C14.668 23.0204 14.8084 23.3595 15.0585 23.6096C15.3085 23.8596 15.6477 24.0001 16.0013 24.0001C16.3549 24.0001 16.6941 23.8596 16.9441 23.6096C17.1942 23.3595 17.3346 23.0204 17.3346 22.6667V20.0001C17.3346 19.6465 17.1942 19.3073 16.9441 19.0573C16.6941 18.8072 16.3549 18.6667 16.0013 18.6667Z" fill="#1D996C"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_121_1825">
+                                <rect width="32" height="32" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>       
+                        </div>
+                        <p>Длина пароля должна быть не менее 7 символов<br>
+                            Проверьте, не включен ли Caps Lock</p>
+
+                            <form action="">
+                                <label>
+                                    <span>Старый пароль</span>
+                                    <input type="text">
+                                </label>
+
+                                <label>
+                                    <span>Новый пароль</span>
+                                    <input type="text">
+                                </label>
+
+                                <label>
+                                    <span>Повторите новый пароль</span>
+                                    <input type="text">
+                                </label>
+
+                                <button type="submit">Изменить пароль</button>
+                            </form>
+                    </div>
+
+                </div>
             </div>
-        </div>
-       </section>
+        </section>
 
     </main>
     
@@ -534,6 +608,8 @@
     
     
     
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>

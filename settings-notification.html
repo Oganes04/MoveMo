@@ -154,42 +154,107 @@
 
     <main class="main">
         
-       <section class="proposal">
-        <div class="container">
-            <div class="proposal__inner">
+        <section class="settings-notification">
+            <div class="container">
+                <div class="settings-notification__inner">
+                    <div class="settings-notification__info">
+                        <h1>Настройки уведомлений</h1>
+                        <p>
+                            Чтобы избежать перегрузки постоянными оповещениями, пожалуйста, отметьте какие уведомления вы бы хотели получать от нас.
+                            <br><br>
+                            Настроив параметры уведомлений, вы сможете получать только самые важные обновления, что поможет вам оставаться сосредоточенными и продуктивными, не отвлекаясь на лишние шумы.
+                            <br><br>
+                            Это сделает наше взаимодействие с вами более комфортным.
+                        </p>
+                    </div>
+                    <form action="">
+                        <h2>Подписки на события</h2>
+                        <span>Изменить подписки</span>
+                        <p>Отметьте те рассылки, которые вы хотели бы получать от нас</p>
 
-                <form action="">
+                        <h3>Уведомления на основной E-mail (<span>pet.mol@mail.ru</span>)</h3>
 
-                    <h1>Жалоба</h1>
+                        <label>
+                           <div class="col">
+                                <p>Уведомления об оформленных заказах</p>
+                                <span>Каждый раз при создании заказа</span>
+                           </div>
 
-                    <label>
-                        <span>Тема</span>
-                        <input type="text" placeholder="Введите тему">
-                    </label>
+                            <label class="check-label">
+                                <span class="options__desc"></span>
+                                <input type="checkbox" name="checkbox">
+                                <span class="fakecheck checked">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.2123 1.943L5.8508 10.8124C5.65381 11.1378 5.3232 11.332 4.96558 11.332C4.64921 11.332 4.34955 11.1796 4.14421 10.9138L0.846477 6.65815C0.58317 6.31819 0.618048 5.81883 0.926551 5.52123C1.22621 5.2312 1.72974 5.22565 2.03628 5.50963L4.83834 8.10428L9.85298 1.00531C10.1025 0.652232 10.6198 0.5569 10.9735 0.801031C11.341 1.05475 11.4461 1.55663 11.2123 1.943Z" fill="white"/>
+                                    </svg>    
+                                </span>
+                            </label>
 
-                    <label>
-                        <span>Телефон</span>
-                        <input type="text" placeholder="+7(777)777-77-77">
-                    </label>
+                        </label>
 
-                    <label>
-                        <span>Имя</span>
-                        <input type="text" placeholder="Ваше имя">
-                    </label>
+                        <label>
+                            <div class="col">
+                                 <p>Уведомления об отказах</p>
+                            </div>
+ 
+                            <div class="col">
+                                <label>
+                                    <span>никогда</span>
+                                    <input type="radio" name="notfication" id="">
+                                </label>
+                                <label>
+                                    <span>ежедневно в 8:00 и 17:00</span>
+                                    <input type="radio" name="notfication" id="">
+                                </label>
+                                <label>
+                                    <span>раз в час 7:00 – 23:00</span>
+                                    <input type="radio" name="notfication" id="">
+                                </label>
+                            </div>
+ 
+                         </label>
 
-                    <label>
-                        <span>Ваше предложение</span>
-                        <textarea name="" id="" rows="6" placeholder="Ваше предложение"></textarea>
-                    </label>
 
-                    <button>Предложить</button>
-                </form>
+                        <label>
+                            <div class="col">
+                                 <p>Новости и спецпредложения</p>
+                                 <span>Рассылка информационных материалов</span>
+                            </div>
+ 
+                             <label class="check-label">
+                                 <span class="options__desc"></span>
+                                 <input type="checkbox" name="checkbox">
+                                 <span class="fakecheck checked">
+                                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                         <path d="M11.2123 1.943L5.8508 10.8124C5.65381 11.1378 5.3232 11.332 4.96558 11.332C4.64921 11.332 4.34955 11.1796 4.14421 10.9138L0.846477 6.65815C0.58317 6.31819 0.618048 5.81883 0.926551 5.52123C1.22621 5.2312 1.72974 5.22565 2.03628 5.50963L4.83834 8.10428L9.85298 1.00531C10.1025 0.652232 10.6198 0.5569 10.9735 0.801031C11.341 1.05475 11.4461 1.55663 11.2123 1.943Z" fill="white"/>
+                                     </svg>    
+                                 </span>
+                             </label>
+ 
+                         </label>
 
 
-                <img src="../images/icons/icon-complaint-mail.svg" alt="">
+                         <label>
+                            <div class="col">
+                                 <p>Документы по заказам</p>
+                                 <span>Присылать закрывающие документы</span>
+                            </div>
+ 
+                             <label class="check-label">
+                                 <span class="options__desc"></span>
+                                 <input type="checkbox" name="checkbox">
+                                 <span class="fakecheck checked">
+                                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                         <path d="M11.2123 1.943L5.8508 10.8124C5.65381 11.1378 5.3232 11.332 4.96558 11.332C4.64921 11.332 4.34955 11.1796 4.14421 10.9138L0.846477 6.65815C0.58317 6.31819 0.618048 5.81883 0.926551 5.52123C1.22621 5.2312 1.72974 5.22565 2.03628 5.50963L4.83834 8.10428L9.85298 1.00531C10.1025 0.652232 10.6198 0.5569 10.9735 0.801031C11.341 1.05475 11.4461 1.55663 11.2123 1.943Z" fill="white"/>
+                                     </svg>    
+                                 </span>
+                             </label>
+ 
+                         </label>
+                    </form>
+                </div>
             </div>
-        </div>
-       </section>
+        </section>
 
     </main>
     
@@ -534,6 +599,8 @@
     
     
     
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>

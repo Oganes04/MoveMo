@@ -1045,6 +1045,182 @@ header:has(.burger_menu.open) .header__adaptive-content {
   top: -8px;
 }
 
+.footer {
+  background-color: #252D33;
+  color: #FFF;
+}
+
+.footer__top {
+  padding: 52px 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 0.5px solid #4D5C67;
+}
+
+.footer__nav {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.footer__nav h2 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.footer__nav ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 168px;
+}
+
+.footer__nav ul a {
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.footer__info > span {
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.footer__info .footer__phone a {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 600;
+  color: #FCFCFC;
+}
+
+.footer__info .footer__phone .row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  margin-bottom: 36px;
+}
+
+.footer__info .footer__phone .row svg {
+  width: 16px;
+  height: 16px;
+}
+
+.footer__info .footer__phone .row span {
+  font-weight: 500;
+  font-size: var(--font-14);
+  border-bottom: 1px dashed #1D996C;
+}
+
+.footer__social span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.footer__social-icons {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer__social-icons img {
+  width: 36px;
+  height: 36px;
+}
+
+.footer__middle {
+  padding: 28px 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.5px solid #4D5C67;
+}
+
+.footer__middle a {
+  font-size: 12px;
+  font-weight: 600;
+  color: #4D5C67;
+}
+
+.footer__middle a:nth-child(2) {
+  margin-left: 216px;
+}
+
+.footer__middle a:nth-child(3) {
+  margin-left: 48px;
+}
+
+.footer__middle .footer__logo {
+  width: 131px;
+  height: 52px;
+}
+
+.footer__middle .footer__logo img {
+  width: 131px;
+  height: 52px;
+}
+
+.footer__middle .footer__location {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+
+.footer__middle .footer__location img {
+  width: 20px;
+  height: 24px;
+}
+
+.footer__middle .footer__location span {
+  font-size: 500;
+  font-size: 16px;
+}
+
+.footer__bottom {
+  padding: 16px 0 28px;
+}
+
+.footer__bottom span {
+  display: block;
+  height: 28px;
+  font-size: 9px;
+  font-weight: 400;
+  color: #4D5C67;
+}
+
 .bulk-client {
   margin-bottom: 63px;
 }
@@ -2735,4 +2911,415 @@ header:has(.burger_menu.open) .header__adaptive-content {
   font-weight: 600;
   color: #FFF;
   margin-top: 20px;
+}
+
+.popup-mini {
+  width: 440px;
+  padding: 44px 36px 32px 36px;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #3D4B55;
+  color: #FFF;
+  z-index: 99999;
+  text-align: center;
+}
+
+.popup-mini h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.popup-mini input {
+  width: 100%;
+  height: 44px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #FFFFFF;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  box-shadow: inset 3px 4px 4px 0 rgba(61, 75, 85, 0.25);
+  font-size: 10px;
+  font-weight: 500;
+  color: #3D4B55;
+}
+
+.popup-mini input::placeholder {
+  font-size: 8px;
+  font-weight: 300;
+  color: #3D4B55;
+}
+
+.popup-mini button {
+  width: 100%;
+  height: 48px;
+  background-color: #1D996C;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 32px;
+  margin-top: 20px;
+}
+
+.popup-mini span {
+  font-size: 10px;
+  font-weight: 500;
+  color: #C8C8C8;
+  cursor: pointer;
+}
+
+.popup-mini p {
+  display: none;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.popup-mini label {
+  position: relative;
+  width: 100%;
+  height: 44px;
+  display: block;
+}
+
+.popup-mini label svg {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  z-index: 100;
+}
+
+.popup-mini:has(form.error) p {
+  display: block;
+  color: #FD6969;
+  margin-bottom: 12px;
+}
+
+.popup-mini:has(form.error) form button {
+  margin-bottom: 8px;
+}
+
+.popup-mini:has(form.error) form input {
+  border-color: #FF4141;
+}
+
+.settings-profile__inner {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.settings-profile__email {
+  width: 568px;
+  padding: 32px 32px 36px;
+  border-radius: 10px;
+  border: 0.5px solid #1D996C;
+  min-height: 496px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-profile__email .cols {
+  padding-top: 32px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.settings-profile__email .cols > span {
+  display: inline-block;
+  width: 156px;
+  height: 40px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+
+.settings-profile__email .col {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.settings-profile__email button[type=submit] {
+  height: 56px;
+  border-radius: 5px;
+  background-color: #1D996C;
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFF;
+  width: 100%;
+  margin-top: auto;
+}
+
+.settings-profile__header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #1D996C;
+}
+
+.settings-profile__header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.settings-profile__header span {
+  font-size: 10px;
+}
+
+.settings-profile__header svg {
+  width: 32px;
+  height: 32px;
+}
+
+.settings-profile__input {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.settings-profile__input input {
+  width: 236px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #1D996C;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: #3D4B55;
+}
+
+.settings-profile__input button {
+  width: 40px;
+  height: 40px;
+}
+
+.settings-profile__input button img {
+  width: 40px;
+  height: 40px;
+}
+
+.settings-profile__password {
+  width: 568px;
+  padding: 32px 32px 36px;
+  border-radius: 10px;
+  border: 0.5px solid #1D996C;
+  min-height: 496px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-profile__password > p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 32px;
+  margin-top: 12px;
+}
+
+.settings-profile__password form {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.settings-profile__password form label {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings-profile__password form label span {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.settings-profile__password form label input {
+  height: 40px;
+  width: 272px;
+  border-radius: 5px;
+  border: 1px solid #1D996C;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: #3D4B55;
+}
+
+.settings-profile__password form button {
+  height: 56px;
+  border-radius: 5px;
+  background-color: #1D996C;
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFF;
+  width: 100%;
+  margin-top: auto;
+}
+
+.settings-notification__inner {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.settings-notification__info {
+  width: 544px;
+}
+
+.settings-notification p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.settings-notification form {
+  flex: 1;
+  padding: 32px 32px 40px;
+  border-radius: 10px;
+  border: 0.5px solid #1D996C;
+}
+
+.settings-notification form h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.settings-notification form > span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.settings-notification form > p {
+  font-size: 10px;
+  font: 400px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #1D996C;
+}
+
+.settings-notification form h3 {
+  margin-top: 29px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 27px;
+}
+
+.settings-notification form > label {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 0.5px solid #A9B2B8;
+  padding-left: 4px;
+  padding-right: 28px;
+  padding-top: 12px;
+}
+
+.settings-notification form > label .fakecheck {
+  width: 16px;
+  height: 16px;
+}
+
+.settings-notification form > label .col:has(input) {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.settings-notification form > label .col p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.settings-notification form > label .col span {
+  font-size: 10px;
+}
+
+.settings-notification form > label .col:has(input) {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.settings-notification form > label .col:has(input) label {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.settings-notification form > label .col:has(input) label span {
+  display: inline-block;
+  width: 153px;
+}
+
+.settings-notification form > label .col:has(input) label input[type=radio] {
+  accent-color: #1D996C;
+  width: 16px;
+  height: 16px;
 }
