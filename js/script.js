@@ -47,9 +47,31 @@ $('.popup-dept-btn').click(function() {
 });
 
 
+$('.popup-authorization-btn').click(function() {
+    openPopup($('.popup-authorization'));
+});
+
+$('.popup-password-recovery-btn').click(function() {
+    openPopup($('.popup-password-recovery'));
+});
 
 
 
+$('.popup-confirmation-code-btn').click(function() {
+    openPopup($('.popup-confirmation-code'));
+});
+
+$(document).ready(function() {
+    $(document).mouseup(function(e) {
+        var container = $('.popup-mini');
+        if (!container.is(e.target) && container.has(e.target).length === 0) {
+            container.hide();
+            $('.overlay').hide();
+            container.hide();
+            $('html').css('overflow-y', 'auto');
+        }
+    });
+});
 
 
 //====================== Реализация функционала КОРЗИНЫ ===================
@@ -128,16 +150,20 @@ $('.cart-item-quantity-remove').click(function() {
 
 $(document).on('click', '.popup-mini form label:has(input[type="password"]) svg', function(e) {
     $(this).parent().find('input').attr('type', 'text');
+    $(this).parent().find('svg .cross').hide();
 });
 
 
 $(document).on('click', '.popup-mini form label:has(input[type="text"]) svg', function(e) {
     $(this).parent().find('input').attr('type', 'password');
+    $(this).parent().find('svg .cross').show();
+
 });
 
 
 
 
+//====================== Реализация функционала добавления и удаления полей для почты ===================
 
 $(document).on('click', '.settings-profile__input button.add', function(e) {
     const container = $(this).closest('.col');
