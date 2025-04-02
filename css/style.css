@@ -453,7 +453,7 @@ header:has(.burger_menu.open) .header__adaptive-content {
 .header__top-inner .header__logo {
   margin-right: 24px;
   width: 132px;
-  height: 76px;
+  height: 52px;
 }
 
 .header__search {
@@ -928,6 +928,7 @@ header:has(.burger_menu.open) .header__adaptive-content {
   align-items: center;
   gap: 1px;
   position: relative;
+  cursor: pointer;
 }
 
 .header__account-icon img {
@@ -1298,6 +1299,23 @@ header:has(.burger_menu.open) .header__adaptive-content {
   align-items: center;
   justify-content: center;
   color: #FFF;
+  position: relative;
+}
+
+.header-login__tooltip-info > .col > a::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  background-color: #FFBF00;
+  position: absolute;
+  right: -4px;
+  top: -4px;
+  opacity: 0;
+}
+
+.header-login__tooltip-info > .col > a.notification::after {
+  opacity: 1;
 }
 
 .header-login__tooltip-info > .col > a:not(:last-child) {
