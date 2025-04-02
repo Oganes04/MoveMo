@@ -61,50 +61,63 @@ $('.popup-confirmation-code-btn').click(function() {
     openPopup($('.popup-confirmation-code'));
 });
 
+$('.popup-provider-btn').click(function() {
+    openPopup($('.popup-provider'));
+});
+
+$('.popup-item-imgs-btn').click(function() {
+    openPopup($('.popup-item-imgs'));
+});
+
 $(document).ready(function() {
     $(document).mouseup(function(e) {
-        var container = $('.popup-mini');
+        var container = $('.popup-js');
         if (!container.is(e.target) && container.has(e.target).length === 0) {
             container.hide();
             $('.overlay').hide();
-            container.hide();
             $('html').css('overflow-y', 'auto');
         }
     });
 });
 
 
+
 //====================== Реализация функционала КОРЗИНЫ ===================
 
 
-// Обработчик клика по кнопке "Выбрать всё"
+// Функция для обновления текста кнопки удаления
+function updateDeleteButtonText(isChecked) {
+    const deleteButton = $('.cart__items-delete span');
+    deleteButton.text(isChecked ? 'Удалить выбранное' : 'Очистить корзину');
+}
+
+// Обновите существующий обработчик кнопки "Выбрать всё":
 $('.cart__items-check-all').click(function() {
     const isChecked = $(this).find('input').prop('checked');
-    
-    // Применяем состояние ко всем фейковым чекбоксам
     $('.cart__item .fakecheck').toggleClass('checked', isChecked);
+    $('.cart__items-delete').toggleClass('check', isChecked);
+    updateDeleteButtonText(isChecked);
     
-    // Синхронизируем состояния реальных чекбоксов
     $('.cart__item input[type="checkbox"]')
         .prop('checked', isChecked)
         .trigger('change');
 });
 
-// Обработчики для отдельных чекбоксов
+// Обновите существующий обработчик отдельных чекбоксов:
 $('.cart__item input[type="checkbox"]').change(function() {
-    const allChecked = $('.cart__item input[type="checkbox"]:checked').length === 
-                      $('.cart__item input[type="checkbox"]').length;
-    
-    // Обновляем состояние кнопки "Выбрать всё"
+    const allChecked = $('.cart__item input[type="checkbox"]:checked').length ===
+                       $('.cart__item input[type="checkbox"]').length;
     $('.cart__items-check-all')
         .prop('checked', allChecked)
         .trigger('change');
     
-    // Обновляем классы у fakecheck элементов
     $(this).siblings('.fakecheck')
-        .toggleClass('checked', $(this).prop('checked'));
+           .toggleClass('checked', $(this).prop('checked'));
+    
+    const anyChecked = $('.cart__item input[type="checkbox"]:checked').length > 0;
+    $('.cart__items-delete').toggleClass('check', anyChecked);
+    updateDeleteButtonText(anyChecked);
 });
-
 
 
 
@@ -190,3 +203,33 @@ $(document).on('click', '.settings-profile__input button.delite', function() {
         $(this).parent().remove();
     }
 });
+
+
+
+
+//====================== Инициализация слайдера с галерей товара в popup окне в корзине ===================
+
+
+if (document.querySelectorAll('.cartItemSwiper').length) {
+    const cartItemSwiper= new Swiper('.cartItemSwiper', {
+      loop: true,
+      slidesPerView: 1,
+      speed: 600,
+      centeredSlides: true,  
+      spaceBetween: 20,
+      keyboard: {
+          enabled: true,
+          onlyInViewport: false,
+        },                      
+  
+      navigation: {
+          nextEl: ".cartItemSwiper-next",
+          prevEl: ".cartItemSwiper-prev",
+      },
+      pagination: {
+          el: ".cartItemSwiper-pagination",
+          clickable: true,
+        },
+    })
+  }
+  
