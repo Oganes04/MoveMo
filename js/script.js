@@ -231,5 +231,180 @@ if (document.querySelectorAll('.cartItemSwiper').length) {
           clickable: true,
         },
     })
-  }
+}
+
+
+//====================== Инициализация слайдера с сотрудниками на странице контакты ===================
+
+
+if (document.querySelectorAll('.contactsSwiperOne').length) {
+    const contactsSwiperOne = new Swiper('.contactsSwiperOne', {
+        loop: false,
+        slidesPerView: 'auto',
+        speed: 600,
+        spaceBetween: 28,
+        keyboard: {
+            enabled: true,
+            onlyInViewport: false,
+        },
+        navigation: {
+            nextEl: ".contactsSwiperOne-next",
+            prevEl: ".contactsSwiperOne-prev",
+        },
+        watchSlidesProgress: true,
+        
+        on: {
+            init: function () {
+                this.slides.forEach(slide => {
+                    const slideElement = slide.querySelector('.swiper-slide');
+                    if (slideElement) {
+                        slideElement.classList.toggle('swiper-slide-visible', 
+                            slideElement.classList.contains('swiper-slide-active'));
+                    }
+                });
+            },
+            slideChangeTransitionStart: function () {
+                this.slides.forEach(slide => {
+                    const slideElement = slide.querySelector('.swiper-slide');
+                    if (slideElement) {
+                        slideElement.classList.toggle('swiper-slide-visible', 
+                            slideElement.classList.contains('swiper-slide-active'));
+                    }
+                });
+            }
+        }
+    });
+}
+
+
+if (document.querySelectorAll('.contactsSwiperTwo').length) {
+    const contactsSwiperTwo = new Swiper('.contactsSwiperTwo', {
+        loop: false,
+        slidesPerView: 'auto',
+        speed: 600,
+        spaceBetween: 28,
+        keyboard: {
+            enabled: true,
+            onlyInViewport: false,
+        },
+        navigation: {
+            nextEl: ".contactsSwiperTwo-next",
+            prevEl: ".contactsSwiperTwo-prev",
+        },
+        watchSlidesProgress: true,
+        
+        on: {
+            init: function () {
+                this.slides.forEach(slide => {
+                    const slideElement = slide.querySelector('.swiper-slide');
+                    if (slideElement) {
+                        slideElement.classList.toggle('swiper-slide-visible', 
+                            slideElement.classList.contains('swiper-slide-active'));
+                    }
+                });
+            },
+            slideChangeTransitionStart: function () {
+                this.slides.forEach(slide => {
+                    const slideElement = slide.querySelector('.swiper-slide');
+                    if (slideElement) {
+                        slideElement.classList.toggle('swiper-slide-visible', 
+                            slideElement.classList.contains('swiper-slide-active'));
+                    }
+                });
+            }
+        }
+    });
+}
+
+if (document.querySelectorAll('.contactsSwiperThree').length) {
+    const contactsSwiperThree = new Swiper('.contactsSwiperThree', {
+        loop: false,
+        slidesPerView: 'auto',
+        speed: 600,
+        spaceBetween: 28,
+        keyboard: {
+            enabled: true,
+            onlyInViewport: false,
+        },
+        navigation: {
+            nextEl: ".contactsSwiperThree-next",
+            prevEl: ".contactsSwiperThree-prev",
+        },
+        watchSlidesProgress: true,
+        
+        on: {
+            init: function () {
+                this.slides.forEach(slide => {
+                    const slideElement = slide.querySelector('.swiper-slide');
+                    if (slideElement) {
+                        slideElement.classList.toggle('swiper-slide-visible', 
+                            slideElement.classList.contains('swiper-slide-active'));
+                    }
+                });
+            },
+            slideChangeTransitionStart: function () {
+                this.slides.forEach(slide => {
+                    const slideElement = slide.querySelector('.swiper-slide');
+                    if (slideElement) {
+                        slideElement.classList.toggle('swiper-slide-visible', 
+                            slideElement.classList.contains('swiper-slide-active'));
+                    }
+                });
+            }
+        }
+    });
+}
+
+
+
+//====================== Инициализация слайдера договоров на странице "Контакты" ===================
+
+
+if (document.querySelectorAll('.agreementIPSwiper').length) {
+    const agreementIPSwiper= new Swiper('.agreementIPSwiper', {
+      loop: true,
+      speed: 600,
+      centeredSlides: false,  
+      spaceBetween: 36,
+      slidesPerView: 4,
+      keyboard: {
+          enabled: true,
+          onlyInViewport: false,
+    },                      
   
+      navigation: {
+          nextEl: ".agreementIPSwiper-next",
+          prevEl: ".agreementIPSwiper-prev",
+      },
+    })
+}
+
+if (document.querySelectorAll('.agreementOOOSwiper').length) {
+    const agreementOOOSwiper= new Swiper('.agreementOOOSwiper', {
+      loop: true,
+      speed: 600,
+      centeredSlides: false,  
+      spaceBetween: 36,
+      slidesPerView: 4,
+      keyboard: {
+          enabled: true,
+          onlyInViewport: false,
+    },                      
+  
+      navigation: {
+          nextEl: ".agreementOOOSwiper-next",
+          prevEl: ".agreementOOOSwiper-prev",
+      },
+    })
+}
+
+
+$(document).on('click', '.contacts-agreement__btns button', function() {
+    $('.contacts-agreement__btns button').removeClass('active');
+    $(this).toggleClass('active');
+
+    let sliderType = $(this).data('type');
+
+    $(`.contacts-agreement__slider`).removeClass('active');
+    $(`.contacts-agreement__slider[data-type="${sliderType}"]`).addClass('active');
+});
