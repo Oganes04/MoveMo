@@ -4850,3 +4850,271 @@ header:has(.burger_menu.open) .header__adaptive-content {
   font-size: 20px;
   margin-top: 24px;
 }
+
+.warranty__page h1 {
+  margin-bottom: 84px;
+}
+
+.warranty-spare {
+  margin-bottom: 44px;
+}
+
+.warranty-spare h2 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.warranty-spare__inner {
+  padding: 32px 68px 48px;
+  border-radius: 10px;
+  border: 1px solid #1D996C;
+}
+
+.warranty-spare__inner h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #3D4B55;
+  margin-bottom: 12px;
+}
+
+.warranty-spare__inner p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #3D4B55;
+  margin-bottom: 32px;
+}
+
+.warranty-spare__inner ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.warranty-spare__inner ul li {
+  background-color: #1D996C;
+  border-radius: 10px;
+  padding: 16px 8px 20px 20px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 208px;
+  position: relative;
+}
+
+.warranty-spare__inner ul li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  right: -24px;
+  height: 2px;
+  background-color: #1D996C;
+  width: 24px;
+}
+
+.warranty-spare__inner ul li img {
+  width: 48px;
+  height: 48px;
+}
+
+.warranty-spare__inner ul li p {
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.warranty-spare__inner ul li.large {
+  width: 272px;
+}
+
+.warranty-installation {
+  margin-bottom: 60px;
+}
+
+.warranty-installation__inner {
+  padding: 32px 68px 48px;
+  border-radius: 10px;
+  border: 1px solid #3D4B55;
+}
+
+.warranty-installation__inner h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #3D4B55;
+  margin-bottom: 12px;
+}
+
+.warranty-installation__inner p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #3D4B55;
+  margin-bottom: 32px;
+}
+
+.warranty-installation__inner ul {
+  display: -ms-grid;
+  display: -moz-grid;
+  display: grid;
+  grid-template-columns: 176px 208px 240px 336px;
+  gap: 24px;
+  row-gap: 40px;
+  margin-bottom: 36px;
+}
+
+.warranty-installation__inner ul li {
+  background-color: #3D4B55;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 8px 16px 20px;
+  position: relative;
+}
+
+.warranty-installation__inner ul li:first-child {
+  grid-row: span 2;
+  flex-direction: column;
+  padding: 32px 12px 40px;
+  gap: 20px;
+}
+
+.warranty-installation__inner ul li:first-child img {
+  width: 60px;
+  height: 60px;
+}
+
+.warranty-installation__inner ul li img {
+  width: 48px;
+  height: 48px;
+}
+
+.warranty-installation__inner ul li p {
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.warranty-installation__inner ul li:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  left: -24px;
+  height: 2px;
+  background-color: #3D4B55;
+  width: 24px;
+}
+
+.warranty-installation__inner .warning-hint p {
+  margin: 0;
+}
+
+.warranty-info h2 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.warranty-info h2 + span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #939090;
+}
+
+.warranty-info__inner > p {
+  font-size: 18px;
+  margin-top: 28px;
+  margin-bottom: 36px;
+}
+
+.warranty-info ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 68px;
+}
+
+.warranty-info ul li {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.warranty-info ul li p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.warranty-info ul li .warranty-info__item-icon {
+  flex: none;
+  width: 68px;
+  height: 68px;
+  border-radius: 10px;
+  border: 1px solid #1D996C;
+  box-shadow: 2px 2px 4px 0 rgba(0, 37, 23, 0.1);
+  background: #fff;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.warranty-info ul li .warranty-info__item-icon img {
+  width: 28px;
+  height: 32px;
+}
+
+.warranty-info ul + a {
+  display: inline-block;
+  width: 568px;
+  height: 72px;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: #1D996C;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin-bottom: 48px;
+}
