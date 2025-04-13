@@ -419,18 +419,18 @@ $(document).on('click', '.registration-retail', function() {
     $('.registration__opt').removeClass('open');
     $('.registration__retail').addClass('open');
 
-    $('.registration__type-selector:has(.registration-retail)').removeClass('opacity');
+    $('.registration__type-selector.registration-retail').removeClass('opacity');
 
-    $('.registration__type-selector:not(:has(.registration-retail))').addClass('opacity');
+    $('.registration__type-selector:not(.registration-retail)').addClass('opacity');
 });
 
 $(document).on('click', '.registration-opt', function() {
     $('.registration__retail').removeClass('open');
     $('.registration__opt').addClass('open');
 
-    $('.registration__type-selector:has(.registration-opt)').removeClass('opacity');
+    $('.registration__type-selector.registration-opt').removeClass('opacity');
 
-    $('.registration__type-selector:not(:has(.registration-opt))').addClass('opacity');
+    $('.registration__type-selector:not(.registration-opt)').addClass('opacity');
 
 });
 

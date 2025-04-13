@@ -5129,6 +5129,7 @@ header:has(.burger_menu.open) .header__adaptive-content {
   gap: 32px;
   padding-bottom: 52px;
   border-bottom: 2px solid #1D996C;
+  cursor: pointer;
 }
 
 .registration__type-selector {
