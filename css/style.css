@@ -5620,7 +5620,7 @@ header:has(.burger_menu.open) .header__adaptive-content {
 }
 
 .registration__opt .form-section__title.h-25 {
-  height: 25px;
+  height: 20px;
 }
 
 .registration__opt .form-section__title.h-40 {

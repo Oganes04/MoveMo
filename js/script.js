@@ -414,6 +414,10 @@ $(document).on('click', '.contacts-agreement__btns button', function() {
 
 //====================== Функционал страницы "Регистранция" ===================
 
+$(document).on('click', 'label:has(input[type="radio"])', function() {
+    console.log('click');
+});
+
 
 $(document).on('click', '.registration-retail', function() {
     $('.registration__opt').removeClass('open');
