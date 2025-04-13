@@ -408,3 +408,40 @@ $(document).on('click', '.contacts-agreement__btns button', function() {
     $(`.contacts-agreement__slider`).removeClass('active');
     $(`.contacts-agreement__slider[data-type="${sliderType}"]`).addClass('active');
 });
+
+
+
+
+//====================== Функционал страницы "Регистранция" ===================
+
+
+$(document).on('click', '.registration-retail', function() {
+    $('.registration__opt').removeClass('open');
+    $('.registration__retail').addClass('open');
+
+    $('.registration__type-selector:has(.registration-retail)').removeClass('opacity');
+
+    $('.registration__type-selector:not(:has(.registration-retail))').addClass('opacity');
+});
+
+$(document).on('click', '.registration-opt', function() {
+    $('.registration__retail').removeClass('open');
+    $('.registration__opt').addClass('open');
+
+    $('.registration__type-selector:has(.registration-opt)').removeClass('opacity');
+
+    $('.registration__type-selector:not(:has(.registration-opt))').addClass('opacity');
+
+});
+
+
+$(document).on('click', '.registration__opt-selector', function() {
+    $('.registration__opt-selector').removeClass('active');
+    $(this).toggleClass('active');
+
+    let formType = $(this).data('type');
+
+    $(`.registration__opt form`).removeClass('active');
+    $(`.registration__opt form[data-type="${formType}"]`).addClass('active');
+});
+

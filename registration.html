@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=1280">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header">
+    
+        <div class="header__top">
+            <div class="container">      
+                <div class="header__top-inner">
+                    <a href="index.html" class="header__logo">
+                            <img src="../../images/logo.svg" alt="">
+                    </a>
+    
+    
+                    <div class="header__search">
+                        <div class="header__search-input">
+                            <div class="header__search-input-wrapper">
+                                <input type="text" placeholder="Введите код запчасти или VIN">
+                                <img src="../../images/icons/icon-history.svg" alt="">
+                            </div>
+                            <img src="../../images/icons/icon-search.svg" alt="">  
+                        </div>
+                        <div class="header__search-additions">
+                            <label>
+                                <label class="check-label">
+                                    <span class="options__desc"></span>
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="fakecheck checked">
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.2123 1.943L5.8508 10.8124C5.65381 11.1378 5.3232 11.332 4.96558 11.332C4.64921 11.332 4.34955 11.1796 4.14421 10.9138L0.846477 6.65815C0.58317 6.31819 0.618048 5.81883 0.926551 5.52123C1.22621 5.2312 1.72974 5.22565 2.03628 5.50963L4.83834 8.10428L9.85298 1.00531C10.1025 0.652232 10.6198 0.5569 10.9735 0.801031C11.341 1.05475 11.4461 1.55663 11.2123 1.943Z" fill="white"/>
+                                        </svg>    
+                                    </span>
+                                </label>
+                                <span>Без реплик</span>
+                            </label>
+    
+                            <label>
+                                <label class="check-label">
+                                    <span class="options__desc"></span>
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="fakecheck">
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.2123 1.943L5.8508 10.8124C5.65381 11.1378 5.3232 11.332 4.96558 11.332C4.64921 11.332 4.34955 11.1796 4.14421 10.9138L0.846477 6.65815C0.58317 6.31819 0.618048 5.81883 0.926551 5.52123C1.22621 5.2312 1.72974 5.22565 2.03628 5.50963L4.83834 8.10428L9.85298 1.00531C10.1025 0.652232 10.6198 0.5569 10.9735 0.801031C11.341 1.05475 11.4461 1.55663 11.2123 1.943Z" fill="white"/>
+                                        </svg>    
+                                    </span>
+                                </label>
+                                <span>Без замен</span>
+                            </label>
+    
+                            <label>
+                                <label class="check-label">
+                                    <span class="options__desc"></span>
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="fakecheck">
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.2123 1.943L5.8508 10.8124C5.65381 11.1378 5.3232 11.332 4.96558 11.332C4.64921 11.332 4.34955 11.1796 4.14421 10.9138L0.846477 6.65815C0.58317 6.31819 0.618048 5.81883 0.926551 5.52123C1.22621 5.2312 1.72974 5.22565 2.03628 5.50963L4.83834 8.10428L9.85298 1.00531C10.1025 0.652232 10.6198 0.5569 10.9735 0.801031C11.341 1.05475 11.4461 1.55663 11.2123 1.943Z" fill="white"/>
+                                        </svg>    
+                                    </span>
+                                </label>
+                                <span>Без Emex</span>
+                            </label>
+                        </div>
+                    </div>
+    
+                    <div class="header__location">
+                        <img src="../../images/icons/icon-location.svg" alt="">
+                        <span>Санкт-Петербург</span>
+                    </div>
+    
+                    <div class="header__phone">
+                        <a href="tel:88120000000">8 (812) 000 00 00</a>
+                        <div class="row">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="8" cy="8" r="8" fill="#1D996C"/>
+                                <g clip-path="url(#clip0_24_239)">
+                                <path d="M11.8707 6.63694L11.3546 6.12739C11.1933 5.96815 10.9675 5.96815 10.8062 6.12739L7.96752 8.92994L5.16107 6.09554C5.03204 5.96815 4.77397 5.96815 4.64494 6.09554L4.09655 6.63694C3.93526 6.79618 3.93526 7.01911 4.09655 7.17834L7.96752 11L11.8385 7.17834C12.032 7.01911 12.032 6.76433 11.8707 6.63694Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_24_239">
+                                <rect width="8" height="5" fill="white" transform="translate(4 6)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <span>Заказать звонок</span>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+    
+    
+        <div class="header__bottom">
+           <div class="container">
+                <div class="header__bottom-inner">
+                    <button class="burger-menu-btn">
+                        <div class="burger_menu" id="burger_menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+        
+                        <span>КАТАЛОГИ</span>
+                    </button>
+                    <nav>
+                        <ul>
+                            <li><a href="">ИНФОРМАЦИЯ</a></li>
+                            <li><a href="">ПОСТАВЩИКАМ</a></li>
+                            <li><a href="">КОНТАКТЫ</a></li>
+                        </ul>
+                    </nav>
+    
+    
+                    <div class="header__account">
+                        <div class="header__cart">
+                            <a href="/cart.html"></a>
+                            <div class="col">
+                                <img src="../../images/icons/icon-cart.svg" alt="">
+                                <span>23 шт</span>
+                            </div>
+        
+                            <div class="col">
+                                <span>Итого:</span>
+                                <strong>26 331,00 ₽</strong>
+                            </div>
+                        </div>
+    
+                        <div class="header__account-login">
+                            <img src="../../images/icons/icon-account.svg" alt="">
+                            <span>Войти</span>
+                        </div>
+                    </div>
+    
+                </div>
+           </div>
+        </div>
+    
+    
+    
+    </header>
+
+    <main class="main">
+        
+        <section class="registration">
+            <div class="container">
+                <h1>Регистрация</h1>
+                <div class="registration__type-selectors">
+
+                    <div class="registration__type-selector">
+                        <div class="col">
+                            <img src="../images/registration/registration-roznica.svg" alt="">
+                            <h2>РОЗНИЦА</h2>
+                            <p>Для личного использованияи разовых покупок</p>
+                        </div>
+                        <div class="col">
+                            <ul>
+                                <li>
+                                    <img src="../images/registration/icon-person.svg" alt="">
+                                    <span>Доступно только для физических лиц</span>
+                                </li>
+                                <li>
+                                    <img src="../images/registration/icon-phone.svg" alt="">
+                                    <span>Простая регистрация по номеру телефона</span>
+                                </li>
+                                <li>
+                                    <img src="../images/registration/icon-clock.svg" alt="">
+                                    <span>Выдача товара с 9:00 до 21:00</span>
+                                </li>
+                            </ul>
+                            <button class="registration-retail">Выбрать</button>
+                        </div>
+                    </div>
+
+                    <div class="registration__type-selector">
+                        <div class="col">
+                            <img src="../images/registration/registration-opt.svg" alt="">
+                            <h2>ОПТ</h2>
+                            <p>Для коммерческого использования и дистрибьюции</p>
+                        </div>
+                        <div class="col">
+                            <ul>
+                                <li>
+                                    <img src="../images/registration/icon-person.svg" alt="">
+                                    <span>Доступно только для физических лиц</span>
+                                </li>
+                                <li>
+                                    <img src="../images/registration/icon-free.svg" alt="">
+                                    <span>Для юридических и физических лиц</span>
+                                </li>
+                                <li>
+                                    <img src="../images/registration/icon-calendar.svg" alt="">
+                                    <span>Отсрочка платежа без документов</span>
+                                </li>
+                            </ul>
+                            <button class="registration-opt">Выбрать</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="registration__retail">
+                    <img src="../images/registration/registration__retail-bg.svg" alt="">
+                    <form action="">
+                        <h2>Введите данные</h2>
+                        <input type="text" placeholder="Фамилия, имя, отчество полностью">
+                        <input type="text" placeholder="Мобильный телефон">
+                        <input type="text" placeholder="Электронная почта">
+                        <input type="text" placeholder="Дата рождения">
+                        <label>
+                            <label class="check-label">
+                                <span class="options__desc"></span>
+                                <input type="checkbox" name="checkbox">
+                                <span class="fakecheck checked">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.2123 1.943L5.8508 10.8124C5.65381 11.1378 5.3232 11.332 4.96558 11.332C4.64921 11.332 4.34955 11.1796 4.14421 10.9138L0.846477 6.65815C0.58317 6.31819 0.618048 5.81883 0.926551 5.52123C1.22621 5.2312 1.72974 5.22565 2.03628 5.50963L4.83834 8.10428L9.85298 1.00531C10.1025 0.652232 10.6198 0.5569 10.9735 0.801031C11.341 1.05475 11.4461 1.55663 11.2123 1.943Z" fill="white"/>
+                                    </svg>    
+                                </span>
+                            </label>
+                            <p>Я принимаю условия <a href="">договора оферты</a></p>
+                        </label>
+                        <label>
+                            <label class="check-label">
+                                <span class="options__desc"></span>
+                                <input type="checkbox" name="checkbox">
+                                <span class="fakecheck checked">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.2123 1.943L5.8508 10.8124C5.65381 11.1378 5.3232 11.332 4.96558 11.332C4.64921 11.332 4.34955 11.1796 4.14421 10.9138L0.846477 6.65815C0.58317 6.31819 0.618048 5.81883 0.926551 5.52123C1.22621 5.2312 1.72974 5.22565 2.03628 5.50963L4.83834 8.10428L9.85298 1.00531C10.1025 0.652232 10.6198 0.5569 10.9735 0.801031C11.341 1.05475 11.4461 1.55663 11.2123 1.943Z" fill="white"/>
+                                    </svg>    
+                                </span>
+                            </label>
+                            <p>Даю согласие на хранение и обработку персональных данных в соответствии<a href="">с политикой конфиденциальности</a></p>
+                        </label>
+                        <label>
+                            <label class="check-label">
+                                <span class="options__desc"></span>
+                                <input type="checkbox" name="checkbox">
+                                <span class="fakecheck checked">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.2123 1.943L5.8508 10.8124C5.65381 11.1378 5.3232 11.332 4.96558 11.332C4.64921 11.332 4.34955 11.1796 4.14421 10.9138L0.846477 6.65815C0.58317 6.31819 0.618048 5.81883 0.926551 5.52123C1.22621 5.2312 1.72974 5.22565 2.03628 5.50963L4.83834 8.10428L9.85298 1.00531C10.1025 0.652232 10.6198 0.5569 10.9735 0.801031C11.341 1.05475 11.4461 1.55663 11.2123 1.943Z" fill="white"/>
+                                    </svg>    
+                                </span>
+                            </label>
+                            <p>Даю согласие на получение e-mail и смс уведомлений по моим заказам</p>
+                        </label>
+
+                        <button>Зарегистрироваться</button>
+                    </form>
+
+                    <ul>
+                        <li>
+                            <img src="../images/registration/icon-card.svg" alt="">
+                            <span>Оплата банковскими картами</span>
+                        </li>
+                        <li>
+                            <img src="../images/registration/icon-search.svg" alt="">
+                            <span>Поиск запчастей по VIN-коду</span>
+                        </li>
+                        <li>
+                            <img src="../images/registration/icon-discount.svg" alt="">
+                            <span>Сниженные цены и скидки</span>
+                        </li>
+                        <li>
+                            <img src="../images/registration/icon-satatus.svg" alt="">
+                            <span>Онлайн статус заказа</span>
+                        </li>
+                        <li>
+                            <img src="../images/registration/icon-push.svg" alt="">
+                            <span>Бесплатные смс уведомления</span>
+                        </li>
+                        <li>
+                            <img src="../images/registration/icon-history.svg" alt="">
+                            <span>История заказа</span>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="registration__opt">
+                    <img src="../images/registration/registration__retail-bg.svg" alt="">
+
+                   <div class="wrapper">
+                        <ul>
+                            <li>
+                                <span>Личный менеджер</span>
+                                <img src="../images/registration/icon-opt-person.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="../images/registration/icon-opt-history.svg" alt="">
+                                <span>История заказа</span>
+                            </li>
+                            <li>
+                                <span>Поиск запчастей по VIN-коду</span>
+                                <img src="../images/registration/icon-opt-search.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="../images/registration/icon-opt-card.svg" alt="">
+                                <span>Оплата банковскими картами</span>
+                            </li>
+                            <li>
+                                <span>Сниженные цены и скидки</span>
+                                <img src="../images/registration/icon-opt-discount.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="../images/registration/icon-opt-history-2.svg" alt="">
+                                <span>История заказа</span>
+                            </li>
+                            <li>
+                                <span>Отсрочка платежа</span>
+                                <img src="../images/registration/icon-opt-calendar.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="../images/registration/icon-opt-push.svg" alt="">
+                                <span>Бесплатные смс уведомления</span>
+                            </li>
+                        </ul>
+                   </div>
+
+                    
+                    <div class="registration__opt-selectors">
+                        <div class="registration__opt-selector active" data-type="fiz">
+                            <h2>Физическое лицо</h2>
+                            <span>оплата картой и наличными в кассе</span>
+                        </div>
+
+                        <div class="registration__opt-selector" data-type="ip">
+                            <h2>Индивидуальный предприниматель</h2>
+                            <span>безналичный расчет, карта, наличные в кассе</span>
+                        </div>
+
+                        <div class="registration__opt-selector" data-type="ur">
+                            <h2>Юридическое лицо (ООО, АО)</h2>
+                            <span>только безналичный расчет</span>
+                        </div>
+                    </div>
+
+
+                    <form action="" class="active" data-type="fiz">
+                        <div class="col">
+                            <div class="form-section">
+                                <div class="form-section__title">
+                                    <img src="../images/registration/icon-info.svg" alt="">
+                                    <span>Для подтверждения регистрации и уведомлений.</span>
+                                </div>
+                                <label>
+                                    <strong>Фамилия</strong>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <strong>Имя</strong>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <strong>Отчество</strong>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <p>
+                                        <strong>Название вашей точки продаж</strong>
+                                        <br>
+                                        <span>(не обязательно)</span>
+                                    </p>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <strong>Мобильный телефон</strong>
+                                    <input type="tel">
+                                </label>
+                                <label>
+                                    <strong>E-mail</strong>
+                                    <input type="text">
+                                </label>
+                            </div>
+
+
+                            <div class="form-section">
+                                <div class="form-section__title">
+                                    <img src="../images/registration/icon-info.svg" alt="">
+                                    <span>Для заключения договора.</span>
+                                </div>
+
+                                <label>
+                                    <strong>Серия и номер паспорта</strong>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <strong>Ден рождения</strong>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <strong>Адрес регистрации</strong>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <strong>Кем выдан паспорт</strong>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <strong>Дата выдачи паспорта</strong>
+                                    <input type="text">
+                                </label>
+
+                                <label>
+                                    <div class="row">
+                                        <strong>Адрес доставки</strong>
+                                        <div class="swich">
+                                            <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+                                        </div>
+                                        <span>совпадает</span>
+                                    </div>
+                                    <input type="text">
+                                </label>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col">
+                            <div class="form-section">
+                                <div class="form-section__title">
+                                    <img src="../images/registration/icon-info.svg" alt="">
+                                    <span>Выберите для себя комфортные условия работы. Потом можно изменить через своего персонального менеджера.</span>
+                                </div>
+
+                                <label class="label-col">
+                                    <strong>Требуется доставка?</strong>
+                                    <label>
+                                        <input type="radio" name="delivery" id="delivery-1">
+                                        <label for="delivery-1"></label>
+                                        <span>Требуется</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="delivery" id="delivery-2">
+                                        <label for="delivery-2"></label>
+                                        <span>Не требуется</span>
+                                    </label>
+                                </label>
+                            </div>
+
+                            <div class="form-section">
+                                <div class="form-section__title">
+                                    <img src="../images/registration/icon-info.svg" alt="">
+                                    <span>Для нашей статистики.</span>
+                                </div>
+
+                                <label class="label-col">
+                                    <strong>Требуется доставка?</strong>
+                                    <ul>
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-1">
+                                                <label for="delivery-2-1"></label>
+                                                <span>От друзей</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Avito</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>VK</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Юла</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Другая социальная сеть</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Яндекс поиск</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Google поиск</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Из интернета</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Другая поисковая система</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Из печатных изданий</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Email письмо</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>От другого поставщика</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </label>
+                            </div>
+
+                            <div class="form-submit">
+                                <button>Зарегистрироваться</button>
+
+                                <label>
+                                    <label class="check-label">
+                                        <span class="options__desc"></span>
+                                        <input type="checkbox" name="checkbox">
+                                        <span class="fakecheck checked">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.2123 1.943L5.8508 10.8124C5.65381 11.1378 5.3232 11.332 4.96558 11.332C4.64921 11.332 4.34955 11.1796 4.14421 10.9138L0.846477 6.65815C0.58317 6.31819 0.618048 5.81883 0.926551 5.52123C1.22621 5.2312 1.72974 5.22565 2.03628 5.50963L4.83834 8.10428L9.85298 1.00531C10.1025 0.652232 10.6198 0.5569 10.9735 0.801031C11.341 1.05475 11.4461 1.55663 11.2123 1.943Z" fill="white"/>
+                                            </svg>    
+                                        </span>
+                                    </label>
+                                    <p>Я принимаю условия <a href="">договора оферты</a></p>
+                                </label>
+                                <label>
+                                    <label class="check-label">
+                                        <span class="options__desc"></span>
+                                        <input type="checkbox" name="checkbox">
+                                        <span class="fakecheck checked">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.2123 1.943L5.8508 10.8124C5.65381 11.1378 5.3232 11.332 4.96558 11.332C4.64921 11.332 4.34955 11.1796 4.14421 10.9138L0.846477 6.65815C0.58317 6.31819 0.618048 5.81883 0.926551 5.52123C1.22621 5.2312 1.72974 5.22565 2.03628 5.50963L4.83834 8.10428L9.85298 1.00531C10.1025 0.652232 10.6198 0.5569 10.9735 0.801031C11.341 1.05475 11.4461 1.55663 11.2123 1.943Z" fill="white"/>
+                                            </svg>    
+                                        </span>
+                                    </label>
+                                    <p>Даю согласие на хранение и обработку персональных данных в соответствии<br><a href="">с политикой конфиденциальности</a></p>
+                                </label>
+                                <label>
+                                    <label class="check-label">
+                                        <span class="options__desc"></span>
+                                        <input type="checkbox" name="checkbox">
+                                        <span class="fakecheck checked">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.2123 1.943L5.8508 10.8124C5.65381 11.1378 5.3232 11.332 4.96558 11.332C4.64921 11.332 4.34955 11.1796 4.14421 10.9138L0.846477 6.65815C0.58317 6.31819 0.618048 5.81883 0.926551 5.52123C1.22621 5.2312 1.72974 5.22565 2.03628 5.50963L4.83834 8.10428L9.85298 1.00531C10.1025 0.652232 10.6198 0.5569 10.9735 0.801031C11.341 1.05475 11.4461 1.55663 11.2123 1.943Z" fill="white"/>
+                                            </svg>    
+                                        </span>
+                                    </label>
+                                    <p>Даю согласие на получение e-mail и смс уведомлений по моим заказам</p>
+                                </label>        
+                            </div>
+
+                        </div>
+                    </form>
+
+
+
+
+
+
+                    <form action="" data-type="ip">
+                        <div class="col">
+                            <div class="form-section">
+                                <div class="form-section__title">
+                                    <img src="../images/registration/icon-info.svg" alt="">
+                                    <span>Для подписания договора и определения срока и лимита отсрочки платежа.</span>
+                                </div>
+                                <label>
+                                    <strong>ИНН</strong>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <strong>Фамилия</strong>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <strong>Имя</strong>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <strong>Отчество</strong>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <strong>Фактический адрес</strong>
+                                    <input type="tel">
+                                </label>
+                                <label>
+                                    <strong>Торговое наименование</strong>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <strong>Торговое наименование</strong>
+                                    <input type="text">
+                                </label>
+                            </div>
+
+
+                            <div class="form-section">
+                                <div class="form-section__title">
+                                    <img src="../images/registration/icon-info.svg" alt="">
+                                    <span>Для выставления счетов и автоматической обработки платежей.</span>
+                                </div>
+
+                                <label>
+                                    <strong>БИК</strong>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <strong>Название и адрес банка</strong>
+                                    <input type="text">
+                                </label>
+                            </div>
+
+                            <div class="form-section">
+                                <div class="form-section__title">
+                                    <img src="../images/registration/icon-info.svg" alt="">
+                                    <span>Для оперативной связи, приема заказов, отправки уведомлений.</span>
+                                </div>
+
+                                <label>
+                                    <strong>ФИО представителя</strong>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <strong>Email представителя</strong>
+                                    <input type="text">
+                                </label>
+                            </div>
+
+
+                            <div class="form-section">
+                                <div class="form-section__title">
+                                    <img src="../images/registration/icon-info.svg" alt="">
+                                    <span>Для нашей статистики.</span>
+                                </div>
+
+                                <label class="label-col">
+                                    <strong>Требуется доставка?</strong>
+                                    <ul>
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-1">
+                                                <label for="delivery-2-1"></label>
+                                                <span>От друзей</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Avito</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>VK</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Юла</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Другая социальная сеть</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Яндекс поиск</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Google поиск</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Из интернета</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Другая поисковая система</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Из печатных изданий</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Email письмо</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>От другого поставщика</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </label>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col">
+                            <div class="form-section">
+                                <div class="form-section__title">
+                                    <img src="../images/registration/icon-info.svg" alt="">
+                                    <span>Паспортные данные</span>
+                                </div>
+
+                                <label>
+                                    <strong>Серия и номер паспорта</strong>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <strong>День рождения</strong>
+                                    <input type="text">
+                                </label>
+
+                                <label>
+                                    <strong>Кем выдан паспорт</strong>
+                                    <input type="text">
+                                </label>
+
+                                <label>
+                                    <strong>Дата выдачи паспорта</strong>
+                                    <input type="text">
+                                </label>
+                            </div>
+
+                            <div class="form-section">
+                                <div class="form-section__title">
+                                    <img src="../images/registration/icon-info.svg" alt="">
+                                    <span>Выберите для себя комфортные условия работы. Потом можно изменить через своего персонального менеджера.</span>
+                                </div>
+
+                                <label class="label-col">
+                                    <strong>Требуется доставка?</strong>
+                                    <label>
+                                        <input type="radio" name="delivery" id="delivery-1">
+                                        <label for="delivery-1"></label>
+                                        <span>Требуется</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="delivery" id="delivery-2">
+                                        <label for="delivery-2"></label>
+                                        <span>Не требуется</span>
+                                    </label>
+                                </label>
+                            </div>
+
+                            <div class="form-section">
+                                <div class="form-section__title"></div>
+
+                                <label>
+                                    <strong>Расчетный счет</strong>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <strong>Корреспондентский счет</strong>
+                                    <input type="text">
+                                </label>
+                            </div>
+
+                            <div class="form-section">
+                                <div class="form-section__title h-25"></div>
+
+                                <label>
+                                    <strong>Мобильный телефон представителя</strong>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <strong>Телефон организации</strong>
+                                    <input type="text">
+                                </label>
+                            </div>
+
+                           
+
+                            <div class="form-submit">
+                                <button>Зарегистрироваться</button>
+
+                                <label>
+                                    <label class="check-label">
+                                        <span class="options__desc"></span>
+                                        <input type="checkbox" name="checkbox">
+                                        <span class="fakecheck checked">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.2123 1.943L5.8508 10.8124C5.65381 11.1378 5.3232 11.332 4.96558 11.332C4.64921 11.332 4.34955 11.1796 4.14421 10.9138L0.846477 6.65815C0.58317 6.31819 0.618048 5.81883 0.926551 5.52123C1.22621 5.2312 1.72974 5.22565 2.03628 5.50963L4.83834 8.10428L9.85298 1.00531C10.1025 0.652232 10.6198 0.5569 10.9735 0.801031C11.341 1.05475 11.4461 1.55663 11.2123 1.943Z" fill="white"/>
+                                            </svg>    
+                                        </span>
+                                    </label>
+                                    <p>Я принимаю условия <a href="">договора оферты</a></p>
+                                </label>
+                                <label>
+                                    <label class="check-label">
+                                        <span class="options__desc"></span>
+                                        <input type="checkbox" name="checkbox">
+                                        <span class="fakecheck checked">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.2123 1.943L5.8508 10.8124C5.65381 11.1378 5.3232 11.332 4.96558 11.332C4.64921 11.332 4.34955 11.1796 4.14421 10.9138L0.846477 6.65815C0.58317 6.31819 0.618048 5.81883 0.926551 5.52123C1.22621 5.2312 1.72974 5.22565 2.03628 5.50963L4.83834 8.10428L9.85298 1.00531C10.1025 0.652232 10.6198 0.5569 10.9735 0.801031C11.341 1.05475 11.4461 1.55663 11.2123 1.943Z" fill="white"/>
+                                            </svg>    
+                                        </span>
+                                    </label>
+                                    <p>Даю согласие на хранение и обработку персональных данных в соответствии<br><a href="">с политикой конфиденциальности</a></p>
+                                </label>
+                                <label>
+                                    <label class="check-label">
+                                        <span class="options__desc"></span>
+                                        <input type="checkbox" name="checkbox">
+                                        <span class="fakecheck checked">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.2123 1.943L5.8508 10.8124C5.65381 11.1378 5.3232 11.332 4.96558 11.332C4.64921 11.332 4.34955 11.1796 4.14421 10.9138L0.846477 6.65815C0.58317 6.31819 0.618048 5.81883 0.926551 5.52123C1.22621 5.2312 1.72974 5.22565 2.03628 5.50963L4.83834 8.10428L9.85298 1.00531C10.1025 0.652232 10.6198 0.5569 10.9735 0.801031C11.341 1.05475 11.4461 1.55663 11.2123 1.943Z" fill="white"/>
+                                            </svg>    
+                                        </span>
+                                    </label>
+                                    <p>Даю согласие на получение e-mail и смс уведомлений по моим заказам</p>
+                                </label>        
+                            </div>
+
+                        </div>
+                    </form>
+
+
+
+
+                    <form action="" data-type="ur">
+                        <div class="col">
+                            <div class="form-section">
+                                <div class="form-section__title">
+                                    <img src="../images/registration/icon-info.svg" alt="">
+                                    <span>Для подписания договора и определения срока и лимита отсрочки платежа.</span>
+                                </div>
+                                <label>
+                                    <strong>Наименование организации</strong>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <strong>ИНН</strong>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <strong>КПП</strong>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <strong>Юридический адрес</strong>
+                                    <input type="text">
+                                </label>
+
+                                <label>
+                                    <div class="row">
+                                        <strong>Фактический адрес</strong>
+                                        <div class="swich">
+                                            <input type="checkbox" id="switch-2" /><label for="switch-2">Toggle</label>
+                                        </div>
+                                        <span>совпадает</span>
+                                    </div>
+                                    <input type="text">
+                                </label>
+                            </div>
+
+
+                            <div class="form-section">
+                                <div class="form-section__title">
+                                    <img src="../images/registration/icon-info.svg" alt="">
+                                    <span>Для заключения договора.</span>
+                                </div>
+
+                                <label>
+                                    <strong>Должность руководителя</strong>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <strong>Фамилия руководителя</strong>
+                                    <input type="text">
+                                </label>
+                            </div>
+
+                            <div class="form-section">
+                                <div class="form-section__title">
+                                    <img src="../images/registration/icon-info.svg" alt="">
+                                    <span>Для оперативной связи, приема заказов, отправки уведомлений.</span>
+                                </div>
+
+                                <label>
+                                    <strong>ФИО представителя</strong>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <strong>Email представителя</strong>
+                                    <input type="text">
+                                </label>
+                            </div>
+
+
+                            <div class="form-section">
+                                <div class="form-section__title">
+                                    <img src="../images/registration/icon-info.svg" alt="">
+                                    <span>Для нашей статистики.</span>
+                                </div>
+
+                                <label class="label-col">
+                                    <strong>Требуется доставка?</strong>
+                                    <ul>
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-1">
+                                                <label for="delivery-2-1"></label>
+                                                <span>От друзей</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Avito</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>VK</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Юла</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Другая социальная сеть</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Яндекс поиск</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Google поиск</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Из интернета</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Другая поисковая система</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Из печатных изданий</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>Email письмо</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="delivery" id="delivery-2-2">
+                                                <label for="delivery-2-2"></label>
+                                                <span>От другого поставщика</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </label>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col">
+                            <div class="form-section">
+                                <div class="form-section__title">
+                                    <img src="../images/registration/icon-info.svg" alt="">
+                                    <span>Для выставления счетов и автоматической обработки платежей.</span>
+                                </div>
+
+                                <label>
+                                    <strong>БИК</strong>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <strong>Название и адрес банка</strong>
+                                    <input type="text">
+                                </label>
+
+                                <label>
+                                    <strong>Расчетный счет</strong>
+                                    <input type="text">
+                                </label>
+
+                                <label>
+                                    <strong>Корреспондентский счет</strong>
+                                    <input type="text">
+                                </label>
+                            </div>
+
+                            
+
+                            <div class="form-section">
+                                <div class="form-section__title h-40"></div>
+
+                                <label>
+                                    <strong>Имя руководителя</strong>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <strong>Отчество руководителя</strong>
+                                    <input type="text">
+                                </label>
+                            </div>
+
+                            <div class="form-section">
+                                <div class="form-section__title h-25"></div>
+
+                                <label>
+                                    <strong>Мобильный телефон представителя</strong>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <strong>Телефон организации</strong>
+                                    <input type="text">
+                                </label>
+                            </div>
+
+                           
+
+                            <div class="form-submit">
+                                <button>Зарегистрироваться</button>
+
+                                <label>
+                                    <label class="check-label">
+                                        <span class="options__desc"></span>
+                                        <input type="checkbox" name="checkbox">
+                                        <span class="fakecheck checked">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.2123 1.943L5.8508 10.8124C5.65381 11.1378 5.3232 11.332 4.96558 11.332C4.64921 11.332 4.34955 11.1796 4.14421 10.9138L0.846477 6.65815C0.58317 6.31819 0.618048 5.81883 0.926551 5.52123C1.22621 5.2312 1.72974 5.22565 2.03628 5.50963L4.83834 8.10428L9.85298 1.00531C10.1025 0.652232 10.6198 0.5569 10.9735 0.801031C11.341 1.05475 11.4461 1.55663 11.2123 1.943Z" fill="white"/>
+                                            </svg>    
+                                        </span>
+                                    </label>
+                                    <p>Я принимаю условия <a href="">договора оферты</a></p>
+                                </label>
+                                <label>
+                                    <label class="check-label">
+                                        <span class="options__desc"></span>
+                                        <input type="checkbox" name="checkbox">
+                                        <span class="fakecheck checked">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.2123 1.943L5.8508 10.8124C5.65381 11.1378 5.3232 11.332 4.96558 11.332C4.64921 11.332 4.34955 11.1796 4.14421 10.9138L0.846477 6.65815C0.58317 6.31819 0.618048 5.81883 0.926551 5.52123C1.22621 5.2312 1.72974 5.22565 2.03628 5.50963L4.83834 8.10428L9.85298 1.00531C10.1025 0.652232 10.6198 0.5569 10.9735 0.801031C11.341 1.05475 11.4461 1.55663 11.2123 1.943Z" fill="white"/>
+                                            </svg>    
+                                        </span>
+                                    </label>
+                                    <p>Даю согласие на хранение и обработку персональных данных в соответствии<br><a href="">с политикой конфиденциальности</a></p>
+                                </label>
+                                <label>
+                                    <label class="check-label">
+                                        <span class="options__desc"></span>
+                                        <input type="checkbox" name="checkbox">
+                                        <span class="fakecheck checked">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.2123 1.943L5.8508 10.8124C5.65381 11.1378 5.3232 11.332 4.96558 11.332C4.64921 11.332 4.34955 11.1796 4.14421 10.9138L0.846477 6.65815C0.58317 6.31819 0.618048 5.81883 0.926551 5.52123C1.22621 5.2312 1.72974 5.22565 2.03628 5.50963L4.83834 8.10428L9.85298 1.00531C10.1025 0.652232 10.6198 0.5569 10.9735 0.801031C11.341 1.05475 11.4461 1.55663 11.2123 1.943Z" fill="white"/>
+                                            </svg>    
+                                        </span>
+                                    </label>
+                                    <p>Даю согласие на получение e-mail и смс уведомлений по моим заказам</p>
+                                </label>        
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer__top">
+
+                <div class="footer__nav">
+
+                    <div class="col">
+
+                        <h2>Клиентам</h2>
+
+                        <ul>
+
+                            <li>
+
+                                <a href="">Каталог</a>
+
+                            </li>
+
+    
+
+                            <li>
+
+                                <a href="">Общая информация</a>
+
+                            </li>
+
+    
+
+                            <li>
+
+                                <a href="">Правила доставки</a>
+
+                            </li>
+
+    
+
+                            <li>
+
+                                <a href="">Правила возврата</a>
+
+                            </li>
+
+    
+
+                            <li>
+
+                                <a href="">Сертификаты</a>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+    
+
+                    <div class="col">
+
+                        <h2>Поставщикам</h2>
+
+                        <ul>
+
+                            <li>
+
+                                <a href="">Стать поставщиком</a>
+
+                            </li>
+
+    
+
+                            <li>
+
+                                <a href="">Сменить пользователя</a>
+
+                            </li>
+
+    
+
+    
+
+                            <li>
+
+                                <a href="">Новости и акции</a>
+
+                            </li>
+
+    
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+    
+
+                <div class="footer__info">
+
+                    <span>Связаться с нами</span>
+
+                    <div class="footer__phone">
+
+                        <a href="tel:88120000000">8 (812) 000 00 00</a>
+
+                        <div class="row">
+
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                                <circle cx="8" cy="8" r="8" fill="#1D996C"/>
+
+                                <g clip-path="url(#clip0_24_239)">
+
+                                <path d="M11.8707 6.63694L11.3546 6.12739C11.1933 5.96815 10.9675 5.96815 10.8062 6.12739L7.96752 8.92994L5.16107 6.09554C5.03204 5.96815 4.77397 5.96815 4.64494 6.09554L4.09655 6.63694C3.93526 6.79618 3.93526 7.01911 4.09655 7.17834L7.96752 11L11.8385 7.17834C12.032 7.01911 12.032 6.76433 11.8707 6.63694Z" fill="white"/>
+
+                                </g>
+
+                                <defs>
+
+                                <clipPath id="clip0_24_239">
+
+                                <rect width="8" height="5" fill="white" transform="translate(4 6)"/>
+
+                                </clipPath>
+
+                                </defs>
+
+                            </svg>
+
+                            <span>Заказать звонок</span>
+
+                        </div>
+
+                    </div>
+
+    
+
+                    <div class="footer__social">
+
+                        <span>Мы в сети</span>
+
+                        <div class="footer__social-icon">
+
+                            <a href="">
+
+                                <img src="../../images/icons/icon-tg.svg" alt="">
+
+                            </a>
+
+                            <a href="">
+
+                                <img src="../../images/icons/icon-youtube.svg" alt="">
+
+                            </a>
+
+                            <a href="">
+
+                                <img src="../../images/icons/icon-vk.svg" alt="">
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>          
+
+            </div>
+
+    
+
+            <div class="footer__middle">
+
+                <a href="/" class="footer__logo">
+
+                    <img src="../../images/logo-white.svg" alt="">
+
+                </a>
+
+    
+
+                <a href="">Политика конфиденциальности</a>
+
+                <a href="">Пользовательское соглашение</a>
+
+    
+
+                <div class="footer__location">
+
+                    <img src="../../images/icons/icon-location.svg" alt="">
+
+                    <span>Санкт-Петербург</span>
+
+                </div>
+
+            </div>
+
+    
+
+            <div class="footer__bottom">
+
+                <span>Иллюстрации на сайте от storyset на Freepik</span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="overlay"></div>
+
+    
+
+    <div class="popup popup-account-change popup-js">
+
+       <img class="popup_close" src="../../images/icons/icon-popup-close.svg" alt="">
+
+       <ul>
+
+            <li>
+
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <rect width="24" height="24" rx="12" fill="#3D4B55"/>
+
+                    <g clip-path="url(#clip0_27_317)">
+
+                    <path d="M12.0097 11.9996C12.4983 11.9996 12.9759 11.8548 13.3822 11.5833C13.7885 11.3118 14.1052 10.926 14.2922 10.4745C14.4792 10.0231 14.5281 9.52632 14.4328 9.04707C14.3374 8.56783 14.1021 8.12761 13.7566 7.78209C13.4111 7.43657 12.9709 7.20127 12.4916 7.10594C12.0124 7.01062 11.5156 7.05954 11.0642 7.24654C10.6128 7.43353 10.2269 7.75019 9.95543 8.15648C9.68396 8.56276 9.53906 9.04042 9.53906 9.52906C9.53972 10.1841 9.80022 10.8121 10.2634 11.2753C10.7266 11.7385 11.3546 11.999 12.0097 11.9996ZM12.0097 7.882C12.3354 7.882 12.6538 7.9786 12.9247 8.15958C13.1956 8.34056 13.4067 8.5978 13.5313 8.89876C13.656 9.19972 13.6886 9.53089 13.6251 9.85039C13.5615 10.1699 13.4046 10.4634 13.1743 10.6937C12.944 10.9241 12.6505 11.0809 12.331 11.1445C12.0115 11.208 11.6803 11.1754 11.3793 11.0507C11.0784 10.9261 10.8212 10.715 10.6402 10.4441C10.4592 10.1733 10.3626 9.85482 10.3626 9.52906C10.3626 9.09223 10.5361 8.6733 10.845 8.36441C11.1539 8.05553 11.5728 7.882 12.0097 7.882Z" fill="#FCFCFC"/>
+
+                    <path d="M12.0096 12.8231C11.0271 12.8242 10.0851 13.215 9.39034 13.9098C8.69559 14.6045 8.3048 15.5465 8.30371 16.529C8.30371 16.6382 8.34709 16.7429 8.42431 16.8202C8.50153 16.8974 8.60627 16.9408 8.71548 16.9408C8.82468 16.9408 8.92942 16.8974 9.00664 16.8202C9.08386 16.7429 9.12724 16.6382 9.12724 16.529C9.12724 15.7646 9.43092 15.0314 9.97146 14.4909C10.512 13.9503 11.2451 13.6466 12.0096 13.6466C12.774 13.6466 13.5072 13.9503 14.0477 14.4909C14.5883 15.0314 14.8919 15.7646 14.8919 16.529C14.8919 16.6382 14.9353 16.7429 15.0125 16.8202C15.0898 16.8974 15.1945 16.9408 15.3037 16.9408C15.4129 16.9408 15.5177 16.8974 15.5949 16.8202C15.6721 16.7429 15.7155 16.6382 15.7155 16.529C15.7144 15.5465 15.3236 14.6045 14.6288 13.9098C13.9341 13.215 12.9921 12.8242 12.0096 12.8231Z" fill="#FCFCFC"/>
+
+                    </g>
+
+                    <defs>
+
+                    <clipPath id="clip0_27_317">
+
+                    <rect width="9.88235" height="9.88235" fill="white" transform="translate(7.06836 7.05847)"/>
+
+                    </clipPath>
+
+                    </defs>
+
+                </svg>
+
+                <strong>Миронов Максим Евгеньевич</strong>
+
+                <span>ID: 115</span>
+
+            </li>
+
+    
+
+            <li>
+
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <rect width="24" height="24" rx="12" fill="#3D4B55"/>
+
+                    <g clip-path="url(#clip0_27_317)">
+
+                    <path d="M12.0097 11.9996C12.4983 11.9996 12.9759 11.8548 13.3822 11.5833C13.7885 11.3118 14.1052 10.926 14.2922 10.4745C14.4792 10.0231 14.5281 9.52632 14.4328 9.04707C14.3374 8.56783 14.1021 8.12761 13.7566 7.78209C13.4111 7.43657 12.9709 7.20127 12.4916 7.10594C12.0124 7.01062 11.5156 7.05954 11.0642 7.24654C10.6128 7.43353 10.2269 7.75019 9.95543 8.15648C9.68396 8.56276 9.53906 9.04042 9.53906 9.52906C9.53972 10.1841 9.80022 10.8121 10.2634 11.2753C10.7266 11.7385 11.3546 11.999 12.0097 11.9996ZM12.0097 7.882C12.3354 7.882 12.6538 7.9786 12.9247 8.15958C13.1956 8.34056 13.4067 8.5978 13.5313 8.89876C13.656 9.19972 13.6886 9.53089 13.6251 9.85039C13.5615 10.1699 13.4046 10.4634 13.1743 10.6937C12.944 10.9241 12.6505 11.0809 12.331 11.1445C12.0115 11.208 11.6803 11.1754 11.3793 11.0507C11.0784 10.9261 10.8212 10.715 10.6402 10.4441C10.4592 10.1733 10.3626 9.85482 10.3626 9.52906C10.3626 9.09223 10.5361 8.6733 10.845 8.36441C11.1539 8.05553 11.5728 7.882 12.0097 7.882Z" fill="#FCFCFC"/>
+
+                    <path d="M12.0096 12.8231C11.0271 12.8242 10.0851 13.215 9.39034 13.9098C8.69559 14.6045 8.3048 15.5465 8.30371 16.529C8.30371 16.6382 8.34709 16.7429 8.42431 16.8202C8.50153 16.8974 8.60627 16.9408 8.71548 16.9408C8.82468 16.9408 8.92942 16.8974 9.00664 16.8202C9.08386 16.7429 9.12724 16.6382 9.12724 16.529C9.12724 15.7646 9.43092 15.0314 9.97146 14.4909C10.512 13.9503 11.2451 13.6466 12.0096 13.6466C12.774 13.6466 13.5072 13.9503 14.0477 14.4909C14.5883 15.0314 14.8919 15.7646 14.8919 16.529C14.8919 16.6382 14.9353 16.7429 15.0125 16.8202C15.0898 16.8974 15.1945 16.9408 15.3037 16.9408C15.4129 16.9408 15.5177 16.8974 15.5949 16.8202C15.6721 16.7429 15.7155 16.6382 15.7155 16.529C15.7144 15.5465 15.3236 14.6045 14.6288 13.9098C13.9341 13.215 12.9921 12.8242 12.0096 12.8231Z" fill="#FCFCFC"/>
+
+                    </g>
+
+                    <defs>
+
+                    <clipPath id="clip0_27_317">
+
+                    <rect width="9.88235" height="9.88235" fill="white" transform="translate(7.06836 7.05847)"/>
+
+                    </clipPath>
+
+                    </defs>
+
+                </svg>
+
+                <strong>АртАвто</strong>
+
+                <span>ID: 1852</span>
+
+            </li>
+
+    
+
+            <li>
+
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <rect width="24" height="24" rx="12" fill="#3D4B55"/>
+
+                    <g clip-path="url(#clip0_27_317)">
+
+                    <path d="M12.0097 11.9996C12.4983 11.9996 12.9759 11.8548 13.3822 11.5833C13.7885 11.3118 14.1052 10.926 14.2922 10.4745C14.4792 10.0231 14.5281 9.52632 14.4328 9.04707C14.3374 8.56783 14.1021 8.12761 13.7566 7.78209C13.4111 7.43657 12.9709 7.20127 12.4916 7.10594C12.0124 7.01062 11.5156 7.05954 11.0642 7.24654C10.6128 7.43353 10.2269 7.75019 9.95543 8.15648C9.68396 8.56276 9.53906 9.04042 9.53906 9.52906C9.53972 10.1841 9.80022 10.8121 10.2634 11.2753C10.7266 11.7385 11.3546 11.999 12.0097 11.9996ZM12.0097 7.882C12.3354 7.882 12.6538 7.9786 12.9247 8.15958C13.1956 8.34056 13.4067 8.5978 13.5313 8.89876C13.656 9.19972 13.6886 9.53089 13.6251 9.85039C13.5615 10.1699 13.4046 10.4634 13.1743 10.6937C12.944 10.9241 12.6505 11.0809 12.331 11.1445C12.0115 11.208 11.6803 11.1754 11.3793 11.0507C11.0784 10.9261 10.8212 10.715 10.6402 10.4441C10.4592 10.1733 10.3626 9.85482 10.3626 9.52906C10.3626 9.09223 10.5361 8.6733 10.845 8.36441C11.1539 8.05553 11.5728 7.882 12.0097 7.882Z" fill="#FCFCFC"/>
+
+                    <path d="M12.0096 12.8231C11.0271 12.8242 10.0851 13.215 9.39034 13.9098C8.69559 14.6045 8.3048 15.5465 8.30371 16.529C8.30371 16.6382 8.34709 16.7429 8.42431 16.8202C8.50153 16.8974 8.60627 16.9408 8.71548 16.9408C8.82468 16.9408 8.92942 16.8974 9.00664 16.8202C9.08386 16.7429 9.12724 16.6382 9.12724 16.529C9.12724 15.7646 9.43092 15.0314 9.97146 14.4909C10.512 13.9503 11.2451 13.6466 12.0096 13.6466C12.774 13.6466 13.5072 13.9503 14.0477 14.4909C14.5883 15.0314 14.8919 15.7646 14.8919 16.529C14.8919 16.6382 14.9353 16.7429 15.0125 16.8202C15.0898 16.8974 15.1945 16.9408 15.3037 16.9408C15.4129 16.9408 15.5177 16.8974 15.5949 16.8202C15.6721 16.7429 15.7155 16.6382 15.7155 16.529C15.7144 15.5465 15.3236 14.6045 14.6288 13.9098C13.9341 13.215 12.9921 12.8242 12.0096 12.8231Z" fill="#FCFCFC"/>
+
+                    </g>
+
+                    <defs>
+
+                    <clipPath id="clip0_27_317">
+
+                    <rect width="9.88235" height="9.88235" fill="white" transform="translate(7.06836 7.05847)"/>
+
+                    </clipPath>
+
+                    </defs>
+
+                </svg>
+
+                <strong>АРТАВТО ТРАК</strong>
+
+                <span>ID: 125978</span>
+
+            </li>
+
+       </ul>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
