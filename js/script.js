@@ -454,3 +454,16 @@ $(document).on('click', '.calendar__list .calendar__item-header', function() {
    $(this).parent().find('.calendar__item-table').slideToggle(300);
    $(this).find('img').toggleClass('rotate');
 });
+
+
+//====================== Функционал страницы "Готово к отгрузке" ===================
+
+
+$(document).on('click', '.shipment__schedule label', function() {
+    
+    $('.shipment-block').hide();
+
+    let sliderType = $(this).data('type');
+    $(`.shipment-block[data-type="${sliderType}"]`).show();
+ });
+ 
