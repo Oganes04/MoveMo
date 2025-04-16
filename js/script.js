@@ -414,9 +414,6 @@ $(document).on('click', '.contacts-agreement__btns button', function() {
 
 //====================== Функционал страницы "Регистранция" ===================
 
-$(document).on('click', 'label:has(input[type="radio"])', function() {
-    console.log('click');
-});
 
 
 $(document).on('click', '.registration-retail', function() {
@@ -449,3 +446,11 @@ $(document).on('click', '.registration__opt-selector', function() {
     $(`.registration__opt form[data-type="${formType}"]`).addClass('active');
 });
 
+
+
+//====================== Функционал страницы "Календарь" ===================
+
+$(document).on('click', '.calendar__list .calendar__item-header', function() {
+   $(this).parent().find('.calendar__item-table').slideToggle(300);
+   $(this).find('img').toggleClass('rotate');
+});
