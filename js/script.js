@@ -69,6 +69,11 @@ $('.popup-item-imgs-btn').click(function() {
     openPopup($('.popup-item-imgs'));
 });
 
+
+$('.popup-status-btn').click(function() {
+    openPopup($('.popup-status'));
+});
+
 $(document).ready(function() {
     $(document).mouseup(function(e) {
         var container = $('.popup-js');

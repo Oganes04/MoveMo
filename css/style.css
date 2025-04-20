@@ -6676,3 +6676,483 @@ header:has(.burger_menu.open) .header__adaptive-content {
 .shipment .shipment-block {
   display: none;
 }
+
+.orders__search {
+  padding: 32px 28px 36px;
+  border-radius: 10px;
+  background-color: #3D4B55;
+  color: #FCFCFC;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 36px;
+}
+
+.orders__search .row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.orders__search-filter {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.orders__search-filter > span {
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.orders__search-filter > label {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+}
+
+.orders__search-number {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.orders__search-number span {
+  color: #FCFCFC;
+  font-size: 14px;
+}
+
+.orders__search-number input {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  width: 229px;
+  height: 32px;
+  box-shadow: inset 3px 4px 4px 0 rgba(61, 75, 85, 0.25);
+  background: #fff;
+  font-size: 8px;
+  color: #3d4b55;
+  padding: 4px 13px;
+}
+
+.orders__search-brand {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 79px;
+}
+
+.orders__search-brand span {
+  color: #FCFCFC;
+  font-size: 14px;
+}
+
+.orders__search-brand input {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  width: 372px;
+  height: 32px;
+  box-shadow: inset 3px 4px 4px 0 rgba(61, 75, 85, 0.25);
+  background: #fff;
+  font-size: 8px;
+  color: #3d4b55;
+  padding: 4px 13px;
+}
+
+.orders__search-sku {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 65px;
+}
+
+.orders__search-sku span {
+  color: #FCFCFC;
+  font-size: 14px;
+}
+
+.orders__search-sku input {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  width: 229px;
+  height: 32px;
+  box-shadow: inset 3px 4px 4px 0 rgba(61, 75, 85, 0.25);
+  background: #fff;
+  font-size: 8px;
+  color: #3d4b55;
+  padding: 4px 13px;
+}
+
+.orders__search button {
+  flex: 1;
+  height: 32px;
+  background-color: #1D996C;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.orders .shipment__orders-header strong:has(img) {
+  position: relative;
+  cursor: pointer;
+}
+
+.orders .shipment__orders-header strong:has(img)::before {
+  content: url("../images/orders/icon-triangle.svg");
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  top: -14px;
+  width: 6px;
+  height: 6px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.orders .shipment__orders-header strong:has(img) .tooltip {
+  display: block;
+  font-size: 8px;
+  font-weight: 400;
+  color: #808283;
+  padding: 4px;
+  line-height: 20px;
+  border-radius: 5px;
+  border: 0.5px solid #1D996C;
+  background-color: #FCFCFC;
+  white-space: nowrap;
+  position: absolute;
+  top: -34px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.orders .shipment__orders-header strong:has(img) .tooltip:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.orders .shipment__orders-header strong:has(img):last-child .tooltip {
+  right: 0;
+}
+
+.orders .shipment__orders-header strong:has(img):hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.orders .shipment__orders-header strong:has(img):hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.orders .shipment__orders ul li {
+  background-color: #FCFCFC;
+}
+
+.orders .shipment__orders ul li::after {
+  z-index: 9;
+}
+
+.orders .shipment__orders ul li.cancelled {
+  background-color: #FAE4E4;
+}
+
+.orders .shipment__orders ul li.cancelled .cart strong {
+  display: block;
+  position: relative;
+  color: #B0B0B0;
+}
+
+.orders .shipment__orders ul li.cancelled .cart strong::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 1px;
+  background-color: #DD2A1B;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.orders .shipment__orders ul li.cancelled .shipment strong {
+  color: #B0B0B0;
+}
+
+.orders .shipment__orders ul li.cancelled .status strong,
+.orders .shipment__orders ul li.cancelled .cancell span {
+  color: #DD2A1B;
+  font-weight: 700;
+}
+
+.orders .shipment__orders ul li.issued {
+  background-color: #E4FAF2;
+}
+
+.orders .shipment__orders ul li.issued .status strong {
+  color: #1D996C;
+}
+
+.orders .shipment__orders ul li.issued .shipment strong {
+  color: #B0B0B0;
+  font-weight: 400;
+}
+
+.orders .shipment__orders ul li.issued .list span {
+  color: #1D996C;
+  font-weight: 700;
+}
+
+.orders .shipment__orders ul li.reserve {
+  background-color: #FFF2D2;
+}
+
+.orders .shipment__orders ul li .date.overdue {
+  background-color: #FFA490;
+  padding: 20px 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.orders .shipment__orders ul li .date.overdue .tooltip {
+  display: block;
+  font-size: 8px;
+  font-weight: 400;
+  color: #808283;
+  padding: 4px;
+  line-height: 16px;
+  border-radius: 5px;
+  border: 0.5px solid #1D996C;
+  background-color: #FCFCFC;
+  white-space: nowrap;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  top: -24px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background-color: #FCFCFC;
+  z-index: 10;
+}
+
+.orders .shipment__orders ul li .date.overdue .tooltip:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.orders .shipment__orders ul li .date.overdue:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.orders .shipment__orders ul li .status {
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+.orders .shipment__orders .delivery-rating {
+  cursor: pointer;
+}
+
+.orders .shipment__orders .delivery-refund {
+  position: relative;
+}
+
+.orders .shipment__orders .delivery-refund .cart__item-refund-icon {
+  cursor: pointer;
+}
+
+.orders .shipment__orders .delivery-refund:has(.cart__item-refund-icon:hover) .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.orders .shipment__orders .delivery-refund .tooltip {
+  display: block;
+  font-size: 8px;
+  font-weight: 400;
+  color: #808283;
+  padding: 4px;
+  line-height: 20px;
+  border-radius: 5px;
+  border: 0.5px solid #1D996C;
+  background-color: #FCFCFC;
+  white-space: nowrap;
+  position: absolute;
+  top: -30px;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.orders .shipment__orders .delivery-refund .tooltip:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.orders .shipment__orders-header strong {
+  position: relative;
+}
+
+.orders .shipment__orders-header strong .tooltip {
+  position: absolute;
+}
+
+.popup-status {
+  padding: 12px 24px 16px;
+  padding-left: 36px;
+}
+
+.popup-status h2 {
+  font-size: 24px;
+  width: 244px;
+  margin-bottom: 14px;
+}
+
+.popup-status ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+}
+
+.popup-status ul li {
+  position: relative;
+}
+
+.popup-status ul li:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 17px;
+  width: 0.5px;
+  height: 50px;
+  background-color: #B0B0B0;
+}
+
+.popup-status ul li strong {
+  font-size: 12px;
+  font-weight: 700;
+  color: #B0B0B0;
+  line-height: 20px;
+  position: relative;
+  height: 20px;
+  display: inline-block;
+}
+
+.popup-status ul li strong::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 4px;
+  left: -16px;
+  background-image: url("../images/orders/icon-status-popup.svg");
+}
+
+.popup-status ul li.ready strong {
+  color: #1D996C;
+}
+
+.popup-status ul li.ready strong::before {
+  background-image: url("../images/orders/icon-status-popup-ready.svg");
+}
+
+.popup-status ul li.cancell strong {
+  color: #DD2A1B;
+}
+
+.popup-status ul li.cancell strong::before {
+  background-image: url("../images/orders/icon-status-popup-cancell.svg");
+}
+
+.popup-status ul li.cancell p {
+  color: #DD2A1B;
+}
+
+.popup-status ul li.current strong,
+.popup-status ul li.current p {
+  color: #3D4B55;
+}
+
+.popup-status ul li p {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #B0B0B0;
+}
+
+.popup-status ul li:not(:has(p))::before {
+  display: none;
+}
+
+.popup-status ul li:not(:has(p)) strong::before {
+  display: none;
+}
