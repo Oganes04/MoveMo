@@ -7634,3 +7634,290 @@ header:has(.burger_menu.open) .header__adaptive-content {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+.price-list__download {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.price-list__download > p {
+  font-size: 24px;
+}
+
+.price-list__download form {
+  width: 568px;
+  padding: 20px 28px 64px 32px;
+  border-radius: 10px;
+  border: 0.5px solid #1D996C;
+  box-shadow: 0 9px 10px 0 rgba(1, 82, 51, 0.05);
+  background: #fff;
+}
+
+.price-list__download form h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 56px;
+  margin-bottom: 24px;
+}
+
+.price-list__download form .row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  padding-bottom: 4px;
+  border-bottom: 0.5px solid #B0B0B0;
+}
+
+.price-list__download form .row:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.price-list__download form .row > span {
+  font-size: 16px;
+  line-height: 36px;
+  display: inline-block;
+  width: 164px;
+  margin-right: 8px;
+}
+
+.price-list__download form .row > p {
+  font-size: 16px;
+  line-height: 36px;
+  display: inline-block;
+  width: 92px;
+  margin-right: 20px;
+  text-align: right;
+}
+
+.price-list__inputs {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.price-list__inputs label {
+  width: 48px;
+  height: 28px;
+  border-radius: 5px;
+  border: 1px solid #115C41;
+  font-size: 16px;
+  color: #3D4B55;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-list__inputs label input {
+  display: none;
+}
+
+.price-list__inputs label:has(input.add) {
+  background-color: #115C41;
+  color: #FFFFFF;
+}
+
+.price-list__settings {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 56px 68px 60px 32px;
+  border-radius: 10px;
+  border: 0.5px solid #1D996C;
+  box-shadow: 0 9px 10px 0 rgba(1, 82, 51, 0.05);
+  background: #fff;
+  margin-bottom: 44px;
+}
+
+.price-list__settings h2 {
+  width: 212px;
+  font-size: 24px;
+}
+
+.price-list__settings .col {
+  flex: 1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.price-list__settings .row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-bottom: 0.5px solid #A9B2B8;
+}
+
+.price-list__subscription {
+  padding: 56px 68px 56px 32px;
+  border-radius: 10px;
+  border: 0.5px solid #1D996C;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+.price-list__subscription h2 {
+  width: 155px;
+  font-size: 24px;
+}
+
+.price-list__subscription form {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.price-list__subscription form > label {
+  padding-bottom: 4px;
+  border-bottom: 0.5px solid #A9B2B8;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-list__subscription form > label > p {
+  font-size: 16px;
+  color: #3D4B55;
+}
+
+.price-list__subscription form > label > p span {
+  font-size: 10px;
+}
+
+.price-list__subscription form > label input[type=text] {
+  width: 428px;
+  height: 36px;
+  border-radius: 5px;
+  border: 1px solid #1D996C;
+  padding: 8px 12px;
+  font-size: 12px;
+}
+
+.price-list__subscription form > label input[type=time] {
+  width: 137px;
+  padding: 8px;
+  height: 36px;
+  border-radius: 6px;
+  border: 1px solid #3D4B55;
+  font-size: 16px;
+}
+
+.price-list__subscription form button {
+  margin-top: 32px;
+  width: 272px;
+  height: 56px;
+  background-color: #1D996C;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown__header {
+  background-color: #D0F0E5;
+  padding: 8px 4px 8px 12px;
+  color: #3D4B55;
+  font-size: 10px;
+  line-height: 20px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 332px;
+  cursor: pointer;
+}
+
+.dropdown > ul {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 0.5px solid #1D996C;
+  border-radius: 5px;
+  padding: 4px;
+  top: 50%;
+  transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  left: 0px;
+  width: 312px;
+}
+
+.dropdown > ul li {
+  padding: 4px;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 10px;
+  color: #3D4B55;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.dropdown > ul li.active {
+  background-color: #D0F0E5;
+}
+
+.dropdown > ul li:hover {
+  background-color: #D0F0E5;
+}

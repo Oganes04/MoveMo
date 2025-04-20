@@ -529,3 +529,48 @@ $(document).on('click', '.popup-cancell .step-2 button', function() {
 
     openPopup($('.popup-cancell-info'));
 });
+
+
+//====================== Функциональность страницы "Прайсы" ===================
+
+const fileInputs = $('.price-list__inputs input[type="file"]');
+
+fileInputs.on('change', function() {
+  $(this).toggleClass('add', this.files.length > 0);
+});
+
+$('.dropdown .dropdown__header').click(function() {
+    $(this).parent().find('ul').show();
+    let currentValue = $(this).find('span').text();
+    console.log(currentValue);
+    
+    // Находим все li в ul и добавляем/удаляем класс current
+    $(this).parent().find('ul li').each(function() {
+        $(this).toggleClass('active', $(this).text() === currentValue);
+    });
+});
+
+$('.dropdown ul li').click(function() {
+   let currentValue = $(this).text();
+
+   $(this).closest('.dropdown').find('.dropdown__header span').text(currentValue);
+
+   $(this).parent().hide();
+});
+
+
+
+
+
+$(document).on('click', function(e) {
+    const $dropdownHeader = $('.dropdown .dropdown__header');
+    const $dropdownLists = $('.dropdown ul');
+    
+    // Закрываем все списки, если клик был вне dropdown
+    if (!$dropdownHeader.is(e.target) && 
+        $dropdownHeader.has(e.target).length === 0 && 
+        !$dropdownLists.is(e.target) && 
+        $dropdownLists.has(e.target).length === 0) {
+      $dropdownLists.hide();
+    }
+});
