@@ -74,6 +74,24 @@ $('.popup-status-btn').click(function() {
     openPopup($('.popup-status'));
 });
 
+$('.popup-question-btn').click(function() {
+    
+    let formTheme = $('h1').text();
+
+    $('.popup-question input').val(formTheme);
+
+    openPopup($('.popup-question'));
+});
+
+$('.popup-cancell-btn').click(function() {
+    openPopup($('.popup-cancell'));
+});
+
+
+
+
+
+
 $(document).ready(function() {
     $(document).mouseup(function(e) {
         var container = $('.popup-js');
@@ -472,3 +490,42 @@ $(document).on('click', '.shipment__schedule label', function() {
     $(`.shipment-block[data-type="${sliderType}"]`).show();
  });
  
+
+
+//====================== Функциональность попап окна с формой отмены/возврата ===================
+
+function updateButtonState() {
+    const isChecked = $('input[name="cancell"]:checked').length > 0;
+    $('.popup-cancell .step-1 button').prop('disabled', !isChecked);
+}
+
+updateButtonState();
+
+$('input[name="cancell"]').on('change', function() {
+    updateButtonState();
+});
+
+
+function updateButtonState2() {
+    const isChecked = $('input[name="cancell-2"]:checked').length > 0;
+    $('.popup-cancell .step-2 button').prop('disabled', !isChecked);
+}
+
+updateButtonState2();
+
+$('input[name="cancell-2"]').on('change', function() {
+    updateButtonState2();
+});
+
+$(document).on('click', '.popup-cancell .step-1 button', function() {
+    $('.popup-cancell .step-1').hide();
+    $('.popup-cancell .step-2').show();
+});
+
+$(document).on('click', '.popup-cancell .step-2 button', function() {
+    $('.overlay').hide();
+    $('.popup-cancell').hide();
+    $('html').css('overflow-y', 'auto');
+
+    openPopup($('.popup-cancell-info'));
+});

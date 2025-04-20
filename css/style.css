@@ -6677,6 +6677,251 @@ header:has(.burger_menu.open) .header__adaptive-content {
   display: none;
 }
 
+.order-page .replenishment__selections h2 {
+  font-size: 20px;
+}
+
+.order-page .shipment__orders-header strong:has(img) {
+  position: relative;
+  cursor: pointer;
+}
+
+.order-page .shipment__orders-header strong:has(img)::before {
+  content: url("../images/orders/icon-triangle.svg");
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  top: -14px;
+  width: 6px;
+  height: 6px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.order-page .shipment__orders-header strong:has(img) .tooltip {
+  display: block;
+  font-size: 8px;
+  font-weight: 400;
+  color: #808283;
+  padding: 4px;
+  line-height: 20px;
+  border-radius: 5px;
+  border: 0.5px solid #1D996C;
+  background-color: #FCFCFC;
+  white-space: nowrap;
+  position: absolute;
+  top: -34px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.order-page .shipment__orders-header strong:has(img) .tooltip:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.order-page .shipment__orders-header strong:has(img):last-child .tooltip {
+  right: 0;
+}
+
+.order-page .shipment__orders-header strong:has(img):hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.order-page .shipment__orders-header strong:has(img):hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.order-page .shipment__orders ul li {
+  background-color: #FCFCFC;
+}
+
+.order-page .shipment__orders ul li::after {
+  z-index: 9;
+}
+
+.order-page .shipment__orders ul li.cancelled {
+  background-color: #FAE4E4;
+}
+
+.order-page .shipment__orders ul li.cancelled .cart strong {
+  display: block;
+  position: relative;
+  color: #B0B0B0;
+}
+
+.order-page .shipment__orders ul li.cancelled .cart strong::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 1px;
+  background-color: #DD2A1B;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.order-page .shipment__orders ul li.cancelled .shipment strong {
+  color: #B0B0B0;
+}
+
+.order-page .shipment__orders ul li.cancelled .status strong,
+.order-page .shipment__orders ul li.cancelled .cancell span {
+  color: #DD2A1B;
+  font-weight: 700;
+}
+
+.order-page .shipment__orders ul li.issued {
+  background-color: #E4FAF2;
+}
+
+.order-page .shipment__orders ul li.issued .status strong {
+  color: #1D996C;
+}
+
+.order-page .shipment__orders ul li.issued .shipment strong {
+  color: #B0B0B0;
+  font-weight: 400;
+}
+
+.order-page .shipment__orders ul li.issued .list span {
+  color: #1D996C;
+  font-weight: 700;
+}
+
+.order-page .shipment__orders ul li.reserve {
+  background-color: #FFF2D2;
+}
+
+.order-page .shipment__orders ul li .date.overdue {
+  background-color: #FFA490;
+  padding: 20px 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.order-page .shipment__orders ul li .date.overdue .tooltip {
+  display: block;
+  font-size: 8px;
+  font-weight: 400;
+  color: #808283;
+  padding: 4px;
+  line-height: 16px;
+  border-radius: 5px;
+  border: 0.5px solid #1D996C;
+  background-color: #FCFCFC;
+  white-space: nowrap;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  top: -24px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background-color: #FCFCFC;
+  z-index: 10;
+}
+
+.order-page .shipment__orders ul li .date.overdue .tooltip:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.order-page .shipment__orders ul li .date.overdue:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.order-page .shipment__orders ul li .status {
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+.order-page .shipment__orders .delivery-rating {
+  cursor: pointer;
+}
+
+.order-page .shipment__orders .delivery-refund {
+  position: relative;
+}
+
+.order-page .shipment__orders .delivery-refund .cart__item-refund-icon {
+  cursor: pointer;
+}
+
+.order-page .shipment__orders .delivery-refund:has(.cart__item-refund-icon:hover) .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.order-page .shipment__orders .delivery-refund .tooltip {
+  display: block;
+  font-size: 8px;
+  font-weight: 400;
+  color: #808283;
+  padding: 4px;
+  line-height: 20px;
+  border-radius: 5px;
+  border: 0.5px solid #1D996C;
+  background-color: #FCFCFC;
+  white-space: nowrap;
+  position: absolute;
+  top: -30px;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.order-page .shipment__orders .delivery-refund .tooltip:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.order-page .shipment__orders-header strong {
+  position: relative;
+}
+
+.order-page .shipment__orders-header strong .tooltip {
+  position: absolute;
+}
+
 .orders__search {
   padding: 32px 28px 36px;
   border-radius: 10px;
@@ -6820,247 +7065,6 @@ header:has(.burger_menu.open) .header__adaptive-content {
   color: #FFFFFF;
 }
 
-.orders .shipment__orders-header strong:has(img) {
-  position: relative;
-  cursor: pointer;
-}
-
-.orders .shipment__orders-header strong:has(img)::before {
-  content: url("../images/orders/icon-triangle.svg");
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-  -moz-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  -webkit-transform: translate(-50%, 0);
-  -o-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
-  top: -14px;
-  width: 6px;
-  height: 6px;
-  opacity: 0;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -ms-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.orders .shipment__orders-header strong:has(img) .tooltip {
-  display: block;
-  font-size: 8px;
-  font-weight: 400;
-  color: #808283;
-  padding: 4px;
-  line-height: 20px;
-  border-radius: 5px;
-  border: 0.5px solid #1D996C;
-  background-color: #FCFCFC;
-  white-space: nowrap;
-  position: absolute;
-  top: -34px;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -ms-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.orders .shipment__orders-header strong:has(img) .tooltip:hover {
-  opacity: 1;
-  visibility: visible;
-}
-
-.orders .shipment__orders-header strong:has(img):last-child .tooltip {
-  right: 0;
-}
-
-.orders .shipment__orders-header strong:has(img):hover .tooltip {
-  opacity: 1;
-  visibility: visible;
-}
-
-.orders .shipment__orders-header strong:has(img):hover::before {
-  opacity: 1;
-  visibility: visible;
-}
-
-.orders .shipment__orders ul li {
-  background-color: #FCFCFC;
-}
-
-.orders .shipment__orders ul li::after {
-  z-index: 9;
-}
-
-.orders .shipment__orders ul li.cancelled {
-  background-color: #FAE4E4;
-}
-
-.orders .shipment__orders ul li.cancelled .cart strong {
-  display: block;
-  position: relative;
-  color: #B0B0B0;
-}
-
-.orders .shipment__orders ul li.cancelled .cart strong::after {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 1px;
-  background-color: #DD2A1B;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.orders .shipment__orders ul li.cancelled .shipment strong {
-  color: #B0B0B0;
-}
-
-.orders .shipment__orders ul li.cancelled .status strong,
-.orders .shipment__orders ul li.cancelled .cancell span {
-  color: #DD2A1B;
-  font-weight: 700;
-}
-
-.orders .shipment__orders ul li.issued {
-  background-color: #E4FAF2;
-}
-
-.orders .shipment__orders ul li.issued .status strong {
-  color: #1D996C;
-}
-
-.orders .shipment__orders ul li.issued .shipment strong {
-  color: #B0B0B0;
-  font-weight: 400;
-}
-
-.orders .shipment__orders ul li.issued .list span {
-  color: #1D996C;
-  font-weight: 700;
-}
-
-.orders .shipment__orders ul li.reserve {
-  background-color: #FFF2D2;
-}
-
-.orders .shipment__orders ul li .date.overdue {
-  background-color: #FFA490;
-  padding: 20px 4px;
-  border-radius: 5px;
-  cursor: pointer;
-  position: relative;
-}
-
-.orders .shipment__orders ul li .date.overdue .tooltip {
-  display: block;
-  font-size: 8px;
-  font-weight: 400;
-  color: #808283;
-  padding: 4px;
-  line-height: 16px;
-  border-radius: 5px;
-  border: 0.5px solid #1D996C;
-  background-color: #FCFCFC;
-  white-space: nowrap;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-  -moz-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  -webkit-transform: translate(-50%, 0);
-  -o-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
-  top: -24px;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -ms-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  background-color: #FCFCFC;
-  z-index: 10;
-}
-
-.orders .shipment__orders ul li .date.overdue .tooltip:hover {
-  opacity: 1;
-  visibility: visible;
-}
-
-.orders .shipment__orders ul li .date.overdue:hover .tooltip {
-  opacity: 1;
-  visibility: visible;
-}
-
-.orders .shipment__orders ul li .status {
-  cursor: pointer;
-  position: relative;
-  z-index: 10;
-}
-
-.orders .shipment__orders .delivery-rating {
-  cursor: pointer;
-}
-
-.orders .shipment__orders .delivery-refund {
-  position: relative;
-}
-
-.orders .shipment__orders .delivery-refund .cart__item-refund-icon {
-  cursor: pointer;
-}
-
-.orders .shipment__orders .delivery-refund:has(.cart__item-refund-icon:hover) .tooltip {
-  opacity: 1;
-  visibility: visible;
-}
-
-.orders .shipment__orders .delivery-refund .tooltip {
-  display: block;
-  font-size: 8px;
-  font-weight: 400;
-  color: #808283;
-  padding: 4px;
-  line-height: 20px;
-  border-radius: 5px;
-  border: 0.5px solid #1D996C;
-  background-color: #FCFCFC;
-  white-space: nowrap;
-  position: absolute;
-  top: -30px;
-  right: 0;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -ms-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.orders .shipment__orders .delivery-refund .tooltip:hover {
-  opacity: 1;
-  visibility: visible;
-}
-
-.orders .shipment__orders-header strong {
-  position: relative;
-}
-
-.orders .shipment__orders-header strong .tooltip {
-  position: absolute;
-}
-
 .popup-status {
   padding: 12px 24px 16px;
   padding-left: 36px;
@@ -7155,4 +7159,478 @@ header:has(.burger_menu.open) .header__adaptive-content {
 
 .popup-status ul li:not(:has(p)) strong::before {
   display: none;
+}
+
+.order h1 {
+  font-size: 24px;
+  margin-bottom: 28px;
+}
+
+.order__info {
+  padding: 4px;
+  border-bottom: 0.5px solid #3D4B55;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order__info > a {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.order__info > a svg {
+  width: 12px;
+  height: 12px;
+}
+
+.order__info > a span {
+  color: #3D4B55;
+  font-size: 10px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.order__items {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.order__items svg {
+  width: 12px;
+  height: 12px;
+}
+
+.order__items ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  color: #DBE0E4;
+  line-height: 12px;
+}
+
+.order__items ul li {
+  padding: 4px 8px;
+  background-color: #7B868E;
+  border-radius: 5px;
+  position: relative;
+}
+
+.order__items ul li a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.order__items ul li:nth-child(2) {
+  background-color: #3D4B55;
+  line-height: 20px;
+}
+
+.order__total {
+  padding: 8px 0;
+  border-bottom: 0.5px solid #3D4B55;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order__total > p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #45AC87;
+  width: fit-content;
+  padding: 21px 26px;
+  border-radius: 5px;
+}
+
+.order__total-btns {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.order__total-btns button {
+  width: 56px;
+  height: 56px;
+  position: relative;
+}
+
+.order__total-btns button::before {
+  content: "";
+  background-image: url("../images/orders/icon-triangle-rotate.svg");
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  bottom: -8px;
+  width: 6px;
+  height: 6px;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.order__total-btns button:hover .tooltip,
+.order__total-btns button:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.order__total-btns button .tooltip {
+  display: block;
+  font-size: 8px;
+  font-weight: 400;
+  color: #808283;
+  padding: 4px 14px;
+  border-radius: 5px;
+  border: 0.5px solid #1D996C;
+  background-color: #FCFCFC;
+  white-space: nowrap;
+  position: absolute;
+  bottom: -34px;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  z-index: 10;
+}
+
+.order__total-btns button .tooltip:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.order__total-btns button img {
+  width: 56px;
+  height: 56px;
+}
+
+.order__pay {
+  padding: 44px 0 4px;
+  border-bottom: 0.5px solid #3D4B55;
+  margin-bottom: 32px;
+}
+
+.order__pay h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.popup-question label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.popup-question label span {
+  font-size: 12px;
+  color: #B0B0B0;
+  line-height: 20px;
+  display: block;
+}
+
+.popup-question label input {
+  width: 584px;
+  border-radius: 5px;
+  border: 1px solid #3D4B55;
+  font-size: 12px;
+  font-weight: 400;
+  color: #3D4B55;
+  line-height: 26px;
+  padding: 8px 12px;
+}
+
+.popup-question label textarea {
+  width: 584px;
+  height: 192px;
+  border: 1px solid #3D4B55;
+  font-size: 12px;
+  font-weight: 400;
+  color: #3D4B55;
+  resize: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+
+.popup-question label textarea:focus {
+  resize: none;
+  outline: none;
+}
+
+.popup-question button {
+  width: 228px;
+  height: 48px;
+  border-radius: 5px;
+  background-color: #1D996C;
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.popup-cancell-info h2 {
+  font-size: 24px;
+  line-height: 48px;
+  margin: 0;
+}
+
+.popup-cancell-info p {
+  font-size: 14px;
+}
+
+.popup-cancell-info p span.red {
+  color: #DD2A1B;
+}
+
+.popup-cancell-info p span.green {
+  color: #1D996C;
+}
+
+.popup-cancell {
+  padding: 32px 32px 28px;
+  min-width: 632px;
+}
+
+.popup-cancell h2 {
+  font-size: 24px;
+  line-height: 48px;
+  margin-bottom: 0;
+}
+
+.popup-cancell .step-1 h3 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 32px;
+  padding: 4px 8px;
+  border-bottom: 0.5px solid #D0D0D0;
+  margin-bottom: 12px;
+}
+
+.popup-cancell .step-1 .selecors {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 56px;
+}
+
+.popup-cancell .step-1 .selecors label {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.popup-cancell .step-1 .selecors label input {
+  width: 12px;
+  height: 12px;
+  accent-color: #1D996C;
+  margin-top: 4px;
+}
+
+.popup-cancell .step-1 .selecors label p {
+  font-size: 12px;
+  color: #3D4B55;
+}
+
+.popup-cancell .step-1 button {
+  width: 80px;
+  height: 28px;
+  border-radius: 5px;
+  background-color: #3D4B55;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.popup-cancell .step-1 button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.popup-cancell .step-1 button svg {
+  width: 12px;
+  height: 12px;
+}
+
+.popup-cancell .step-2 {
+  display: none;
+}
+
+.popup-cancell .step-2 .warning-hint {
+  padding: 8px 12px 8px 8px;
+  background-color: #FFE5E5;
+  border-color: transparent;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  gap: 4px;
+}
+
+.popup-cancell .step-2 .warning-hint p {
+  color: #21282B;
+  font-size: 10px;
+}
+
+.popup-cancell .step-2 .warning-hint p span {
+  text-decoration: underline;
+}
+
+.popup-cancell .step-2 .warning-hint img {
+  width: 12px;
+  height: 12px;
+}
+
+.popup-cancell .step-2 h3 {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-bottom: 0.5px solid #D0D0D0;
+  margin-bottom: 12px;
+}
+
+.popup-cancell .step-2 .selecors {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.popup-cancell .step-2 .selecors label {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.popup-cancell .step-2 .selecors label input {
+  width: 12px;
+  height: 12px;
+  accent-color: #1D996C;
+  margin-top: 4px;
+}
+
+.popup-cancell .step-2 .selecors label h4 {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #3D4B55;
+}
+
+.popup-cancell .step-2 .selecors label p {
+  font-size: 10px;
+  font-weight: 300;
+  font-style: italic;
+  color: #3D4B55;
+}
+
+.popup-cancell .step-2 .count {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.popup-cancell .step-2 .count span {
+  font-size: 8px;
+}
+
+.popup-cancell .step-2 .count input {
+  width: 41px;
+  height: 32px;
+  padding: 4px 6px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 1px solid #DBE0E4;
+}
+
+.popup-cancell .step-2 .count button {
+  width: 100px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: #3D4B55;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.popup-cancell .step-2 .count button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
