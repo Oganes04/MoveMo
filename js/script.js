@@ -559,9 +559,6 @@ $('.dropdown ul li').click(function() {
 });
 
 
-
-
-
 $(document).on('click', function(e) {
     const $dropdownHeader = $('.dropdown .dropdown__header');
     const $dropdownLists = $('.dropdown ul');
@@ -574,3 +571,15 @@ $(document).on('click', function(e) {
       $dropdownLists.hide();
     }
 });
+
+
+
+
+
+//========================= Высплавающее уведомление =====================
+
+
+$('.header__notification').fadeIn();
+setTimeout(function(){
+    $('.header__notification').fadeOut();
+  }, 3000);

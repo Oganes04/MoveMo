@@ -1432,6 +1432,53 @@ header:has(.burger_menu.open) .header__adaptive-content {
   text-align: center;
 }
 
+.header__notification-wrapper {
+  position: relative;
+  height: 0;
+}
+
+.header__notification-wrapper .header__notification {
+  color: #3D4B55;
+  border-radius: 5px;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  padding: 15px 30px;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 2px 2px 4px 0 rgba(0, 37, 23, 0.1);
+  display: none;
+  padding: 4px;
+}
+
+.header__notification-wrapper .header__notification p {
+  height: 36px;
+  min-width: 256px;
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__notification-wrapper .header__notification.success {
+  border: 1px solid #1D996C;
+  background-color: #D0F0E5;
+}
+
+.header__notification-wrapper .header__notification.warning {
+  border: 1px solid #FFAA00;
+  background-color: #FFF2D7;
+}
+
+.header__notification-wrapper .header__notification.error {
+  border: 1px solid #DD2A1B;
+  background-color: #FFD5D5;
+}
+
 .footer {
   background-color: #252D33;
   color: #FFF;
@@ -6505,6 +6552,10 @@ header:has(.burger_menu.open) .header__adaptive-content {
 .shipment__orders ul li .cell strong {
   font-size: 12px;
   font-weight: 700;
+}
+
+.shipment__orders ul li .cell strong a {
+  color: #3D4B55;
 }
 
 .shipment__orders ul li .cell span,
