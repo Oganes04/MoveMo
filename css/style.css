@@ -2977,15 +2977,48 @@ header:has(.burger_menu.open) .header__adaptive-content {
   fill: #DD2A1B;
 }
 
+.cart__item-rating.rating-low-half svg:first-child path:first-child {
+  fill: #DD2A1B;
+}
+
+.cart__item-rating.rating-low-half svg:first-child path:nth-child(2) {
+  fill: #D9D9D9;
+}
+
 .cart__item-rating.rating-middle svg:first-child path,
 .cart__item-rating.rating-middle svg:nth-child(2) path {
   fill: #FFAA00;
 }
 
-.cart__item-rating.rating-hight svg:first-child path,
-.cart__item-rating.rating-hight svg:nth-child(2) path,
-.cart__item-rating.rating-hight svg:nth-child(3) path {
+.cart__item-rating.rating-middle-half svg:first-child path {
+  fill: #FFAA00;
+}
+
+.cart__item-rating.rating-middle-half svg:nth-child(2) path:first-child {
+  fill: #FFAA00;
+}
+
+.cart__item-rating.rating-middle-half svg:nth-child(2) path:nth-child(2) {
+  fill: #D9D9D9;
+}
+
+.cart__item-rating.rating-high svg:first-child path,
+.cart__item-rating.rating-high svg:nth-child(2) path,
+.cart__item-rating.rating-high svg:nth-child(3) path {
   fill: #1D996C;
+}
+
+.cart__item-rating.rating-high-half svg:first-child path,
+.cart__item-rating.rating-high-half svg:nth-child(2) path {
+  fill: #1D996C;
+}
+
+.cart__item-rating.rating-high-half svg:nth-child(3) path:first-child {
+  fill: #1D996C;
+}
+
+.cart__item-rating.rating-high-half svg:nth-child(3) path:nth-child(2) {
+  fill: #D9D9D9;
 }
 
 .cart__item-refund {
@@ -6521,15 +6554,48 @@ header:has(.burger_menu.open) .header__adaptive-content {
   fill: #DD2A1B;
 }
 
+.shipment__orders ul li .cell.delivery .delivery-rating.rating-low-half svg:first-child path:first-child {
+  fill: #DD2A1B;
+}
+
+.shipment__orders ul li .cell.delivery .delivery-rating.rating-low-half svg:first-child path:nth-child(2) {
+  fill: #D9D9D9;
+}
+
 .shipment__orders ul li .cell.delivery .delivery-rating.rating-middle svg:first-child path,
 .shipment__orders ul li .cell.delivery .delivery-rating.rating-middle svg:nth-child(2) path {
   fill: #FFAA00;
 }
 
-.shipment__orders ul li .cell.delivery .delivery-rating.rating-hight svg:first-child path,
-.shipment__orders ul li .cell.delivery .delivery-rating.rating-hight svg:nth-child(2) path,
-.shipment__orders ul li .cell.delivery .delivery-rating.rating-hight svg:nth-child(3) path {
+.shipment__orders ul li .cell.delivery .delivery-rating.rating-middle-half svg:first-child path {
+  fill: #FFAA00;
+}
+
+.shipment__orders ul li .cell.delivery .delivery-rating.rating-middle-half svg:nth-child(2) path:first-child {
+  fill: #FFAA00;
+}
+
+.shipment__orders ul li .cell.delivery .delivery-rating.rating-middle-half svg:nth-child(2) path:nth-child(2) {
+  fill: #D9D9D9;
+}
+
+.shipment__orders ul li .cell.delivery .delivery-rating.rating-high svg:first-child path,
+.shipment__orders ul li .cell.delivery .delivery-rating.rating-high svg:nth-child(2) path,
+.shipment__orders ul li .cell.delivery .delivery-rating.rating-high svg:nth-child(3) path {
   fill: #1D996C;
+}
+
+.shipment__orders ul li .cell.delivery .delivery-rating.rating-high-half svg:first-child path,
+.shipment__orders ul li .cell.delivery .delivery-rating.rating-high-half svg:nth-child(2) path {
+  fill: #1D996C;
+}
+
+.shipment__orders ul li .cell.delivery .delivery-rating.rating-high-half svg:nth-child(3) path:first-child {
+  fill: #1D996C;
+}
+
+.shipment__orders ul li .cell.delivery .delivery-rating.rating-high-half svg:nth-child(3) path:nth-child(2) {
+  fill: #D9D9D9;
 }
 
 .shipment__orders ul li .cell.delivery .delivery-refund {
