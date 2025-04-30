@@ -1435,12 +1435,19 @@ header:has(.burger_menu.open) .header__adaptive-content {
 .header__notification-wrapper {
   position: relative;
   height: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .header__notification-wrapper .header__notification {
   color: #3D4B55;
   border-radius: 5px;
-  position: absolute;
+  position: relative;
   top: 5px;
   right: 0;
   padding: 15px 30px;
@@ -1449,6 +1456,8 @@ header:has(.burger_menu.open) .header__adaptive-content {
   box-shadow: 2px 2px 4px 0 rgba(0, 37, 23, 0.1);
   display: none;
   padding: 4px;
+  width: fit-content;
+  margin-left: auto;
 }
 
 .header__notification-wrapper .header__notification p {
@@ -8037,4 +8046,69 @@ header:has(.burger_menu.open) .header__adaptive-content {
 
 .dropdown > ul li:hover {
   background-color: #D0F0E5;
+}
+
+.search-list .container > ul {
+  column-count: 3;
+  column-gap: 54px;
+}
+
+.search-list .container > ul > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.search-list .container > ul h2 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 4px;
+  padding-left: 4px;
+}
+
+.search-list .container > ul ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-list .container > ul ul li {
+  border-top: 0.5px solid #3D4B55;
+  padding: 4px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.search-list .container > ul ul li span {
+  display: inline-block;
+  padding-top: 4px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.search-list .container > ul ul li .col {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.search-list .container > ul ul li .col a {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1D996C;
+}
+
+.search-list .container > ul ul li .col p {
+  font-size: 8px;
 }

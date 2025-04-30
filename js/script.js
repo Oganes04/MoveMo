@@ -582,4 +582,4 @@ $(document).on('click', function(e) {
 $('.header__notification').fadeIn();
 setTimeout(function(){
     $('.header__notification').fadeOut();
-  }, 3000);
+}, 3000);
