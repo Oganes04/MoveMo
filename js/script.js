@@ -583,3 +583,58 @@ $('.header__notification').fadeIn();
 setTimeout(function(){
     $('.header__notification').fadeOut();
 }, 3000);
+
+
+
+//====================== Функциональность страницы "Результат поиска" ===================
+
+
+$('.dropdown__table .dropdown__header').click(function() {
+    $(this).parent().find('ul').show();
+    let currentValue = $(this).find('span').text();
+
+    
+    // Находим все li в ul и добавляем/удаляем класс current
+    $(this).parent().find('ul li').each(function() {
+        $(this).toggleClass('active', $(this).text() === currentValue);
+    });
+});
+
+$('.dropdown__table ul li').click(function() {
+   let currentValue = $(this).data('type');
+
+   if (currentValue == 'high') {
+    $(this).closest('.dropdown__table').find('img').addClass('high');
+   } else if (currentValue == 'low') {
+    $(this).closest('.dropdown__table').find('img').removeClass('high');
+
+   }
+
+//    $(this).closest('.dropdown__table').find('.dropdown__header span').text(currentValue);
+
+   $(this).parent().hide();
+});
+
+
+$(document).on('click', function(e) {
+    const $dropdownHeader = $('.dropdown__table .dropdown__header');
+    const $dropdownLists = $('.dropdown__table ul');
+    
+    // Закрываем все списки, если клик был вне dropdown__table
+    if (!$dropdownHeader.is(e.target) && 
+        $dropdownHeader.has(e.target).length === 0 && 
+        !$dropdownLists.is(e.target) && 
+        $dropdownLists.has(e.target).length === 0) {
+      $dropdownLists.hide();
+    }
+});
+
+
+
+$('.cell.cart img').click(function() {
+    $(this).parent().hide();
+    $(this).closest('li').find('.cell.list').hide();
+
+
+    $(this).closest('li').find('.cart__item-count-btns').addClass('open');
+});
