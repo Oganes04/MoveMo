@@ -638,3 +638,97 @@ $('.cell.cart img').click(function() {
 
     $(this).closest('li').find('.cart__item-count-btns').addClass('open');
 });
+
+
+
+
+//====================== Инициализация слайдера с отзывами на главной ===================
+
+
+if (document.querySelectorAll('.reviewsSwiper').length) {
+    const reviewsSwiper = new Swiper('.reviewsSwiper', {
+        slidesPerView: 1,
+        speed: 600,
+        spaceBetween: 20,
+        keyboard: {
+            enabled: true,
+            onlyInViewport: false,
+        },
+        navigation: {
+            nextEl: ".reviewsSwiper-next",
+            prevEl: ".reviewsSwiper-prev",
+        },
+        on: {
+            slideChange: function () {
+                // При прокрутке вперёд скрываем предыдущий слайд
+                if (this.activeIndex > this.previousIndex) {
+                    const previousSlide = this.slides[this.previousIndex];
+                    if (previousSlide) {
+                        previousSlide.style.opacity = '0';
+                        previousSlide.style.transition = 'opacity 0.6s ease-out';
+                    }
+                }
+                
+                // При прокрутке назад показываем только текущий слайд
+                if (this.activeIndex < this.previousIndex) {
+                    const currentSlide = this.slides[this.activeIndex];
+                    if (currentSlide) {
+                        currentSlide.style.opacity = '1';
+                        currentSlide.style.transition = 'opacity 0.6s ease-out';
+                    }
+                }
+            },
+            init: function () {
+                this.slides.forEach(slide => {
+                    slide.style.opacity = '1';
+                    slide.style.transition = 'opacity 0.6s ease-out';
+                });
+            }
+        }
+    });
+}
+
+
+
+if (document.querySelectorAll('.newsSwiper').length) {
+    const newsSwiper = new Swiper('.newsSwiper', {
+        slidesPerView: 1,
+        speed: 600,
+        spaceBetween: 20,
+        keyboard: {
+            enabled: true,
+            onlyInViewport: false,
+        },
+        navigation: {
+            nextEl: ".newsSwiper-next",
+            prevEl: ".newsSwiper-prev",
+        },
+        on: {
+            slideChange: function () {
+                // При прокрутке вперёд скрываем предыдущий слайд
+                if (this.activeIndex > this.previousIndex) {
+                    const previousSlide = this.slides[this.previousIndex];
+                    if (previousSlide) {
+                        previousSlide.style.opacity = '0';
+                        previousSlide.style.transition = 'opacity 0.6s ease-out';
+                    }
+                }
+                
+                // При прокрутке назад показываем только текущий слайд
+                if (this.activeIndex < this.previousIndex) {
+                    const currentSlide = this.slides[this.activeIndex];
+                    if (currentSlide) {
+                        currentSlide.style.opacity = '1';
+                        currentSlide.style.transition = 'opacity 0.6s ease-out';
+                    }
+                }
+            },
+            init: function () {
+                this.slides.forEach(slide => {
+                    slide.style.opacity = '1';
+                    slide.style.transition = 'opacity 0.6s ease-out';
+                });
+            }
+        }
+    });
+}
