@@ -10240,6 +10240,7 @@ header:has(.burger_menu.open) .header__adaptive-content {
   padding: 52px 0;
   box-shadow: 0 9px 10px 0 rgba(1, 82, 51, 0.05);
   background: #fff;
+  border-radius: 0 0 15px 15px;
 }
 
 .platform-page .platform__content-contacts {
@@ -10802,6 +10803,7 @@ header:has(.burger_menu.open) .header__adaptive-content {
 
 .platform-page .platform__content-orders {
   display: none;
+  padding: 0 4px;
 }
 
 .platform-page .platform__content-orders h2 {
@@ -11146,6 +11148,7 @@ header:has(.burger_menu.open) .header__adaptive-content {
 
 .platform-page .platform__content-orders__table .empty {
   font-size: 20px;
+  margin-left: 64px;
 }
 
 .popup-error thead tr {
