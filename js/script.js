@@ -87,6 +87,12 @@ $('.popup-cancell-btn').click(function() {
     openPopup($('.popup-cancell'));
 });
 
+$('.popup-error-btn').click(function() {
+    openPopup($('.popup-error'));
+});
+
+
+
 
 
 
@@ -732,3 +738,73 @@ if (document.querySelectorAll('.newsSwiper').length) {
         }
     });
 }
+
+
+
+//====================== Функциональность страницы "Торговая площадка" ===================
+
+
+$('.prices__settings__table .dropdown__header').click(function() {
+    $(this).parent().find('ul').show();
+    let currentValue = $(this).find('span').text();
+
+    $('.prices__settings__table .dropdown__header').click(function() {
+        $(this).parent().find('ul').show();
+        let currentValue = $(this).find('span').text();
+        console.log(currentValue);
+        
+        // Находим все li в ul и добавляем/удаляем класс current
+        $(this).parent().find('ul li').each(function() {
+            $(this).toggleClass('active', $(this).text() === currentValue);
+        });
+    });
+});
+
+$('.prices__settings__table ul li').click(function() {
+   let currentValue = $(this).text();
+
+   $(this).closest('.prices__settings__table').find('.dropdown__header span').text(currentValue);
+
+   $(this).parent().hide();
+});
+
+
+// Следим за изменениями всех чекбоксов в таблице
+$('.platform__content-orders__table table input[type="checkbox"]').on('change', function() {
+    // Находим форму внутри таблицы
+    const form = $(this).closest('table').parent().find('form');
+    
+    // Проверяем, есть ли хотя бы один выбранный чекбокс
+    const isChecked = $('.platform__content-orders__table table input[type="checkbox"]:checked').length > 0;
+
+    
+    // Если есть выбранные чекбоксы - показываем форму, иначе скрываем
+    if (isChecked) {
+        form.show();
+    } else {
+        form.hide();
+    }
+});
+
+
+
+$(document).on('click', '.platform__content-orders__selectors button', function() {
+    $('.platform__content-orders__selectors button').removeClass('active');
+    $(this).toggleClass('active');
+
+    let sliderType = $(this).data('type');
+
+    $(`.platform__content-orders__table`).hide();
+    $(`.platform__content-orders__table[data-type="${sliderType}"]`).show();
+});
+
+
+$(document).on('click', '.platform__content-selector button', function() {
+    $('.platform__content-selector button').removeClass('active');
+    $(this).toggleClass('active');
+
+    let sliderType = $(this).data('type');
+
+    $(`.platform__content-block`).hide();
+    $(`.platform__content-block[data-type="${sliderType}"]`).show();
+});
