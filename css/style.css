@@ -801,6 +801,7 @@ header:has(.burger_menu.open) .header__adaptive-content {
 
 .header__account-full-info {
   width: 244px;
+  min-height: 115px;
   height: 100%;
   padding: 7px 16px 12px;
   background-color: #fff;
@@ -808,6 +809,12 @@ header:has(.burger_menu.open) .header__adaptive-content {
   border-radius: 10px;
   box-shadow: 0 8px 17px 0 rgba(74, 74, 74, 0.1), 0 189px 53px 0 rgba(74, 74, 74, 0);
   border: 1px solid rgba(255, 255, 255, 0.1);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
 }
 
 .header__account-full-info label {
@@ -842,6 +849,7 @@ header:has(.burger_menu.open) .header__adaptive-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: auto;
 }
 
 .header__account-full-info .row:first-child {
@@ -8677,6 +8685,7 @@ header:has(.burger_menu.open) .header__adaptive-content {
   border-top: 1px solid #3D4B55;
   margin-top: 12px;
   margin-bottom: 12px;
+  justify-content: flex-end;
 }
 
 .search-result-full__list > ul > li ul li {
